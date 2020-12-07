@@ -1,34 +1,15 @@
 .landing {
     width: 100%;
     height: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-.landing__top {
-    background-color: #f0f0f0;
-    flex: 0.05;
-    display: flex;
-    align-items: flex-end;
-    padding-bottom: 10px;
-}
-
-.landing__top>h1 {
-    font-family: 'Asap', sans-serif;
-}
-
-.landing__main {
-    flex: 0.95;
     background-image: url("https://images.unsplash.com/photo-1502139214982-d0ad755818d8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
     background-size: cover;
     background-position: 0 10%;
-    height: 90%;
     /* display: flex;
     align-items: center;
     justify-content: center; */
 }
 
-.landing__main>h1 {
+.landing>h1 {
     font-family: 'Anton', sans-serif;
     padding-right: 25%;
     padding-bottom: 20%;
@@ -39,7 +20,7 @@
     top: 25%;
 }
 
-.landing__main>h6 {
+.landing>h6 {
     font-family: 'Wire One', sans-serif;
     font-size: 2rem;
     color: white;
@@ -48,25 +29,30 @@
     top: 37.5%;
 }
 
-.landing__main>button {
+.landing>button {
     position: absolute;
     left: 20%;
     top: 42%;
     width: 300px;
     padding: 10px;
     font-size: 2rem;
-    border-radius: 20px;
+    border-radius: 5px;
     border: none;
     font-family: 'Asap', sans-serif;
     cursor: pointer;
     transition: all 0.2s;
 }
 
-.landing__main>button:hover {
+.landing>button>a {
+    text-decoration: none;
+    color: #202020;
+}
+
+.landing>button:hover {
     background-color: #ccc
 }
 
-.landing__main>button:focus {
+.landing>button:focus {
     outline: none;
 }
 

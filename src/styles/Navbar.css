@@ -1,11 +1,22 @@
 .navbar {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 70%;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.navbar__icon {
+    justify-self: flex-start;
+    flex: 1;
+}
+
+.navbar__icon>a {
+    font-family: 'Asap', sans-serif;
+    color: #202020;
+    text-decoration: none;
 }
 
 .navbar>ul {
+    flex: 1.5;
     font-family: 'Asap', sans-serif;
     font-size: 1.2rem;
     list-style-type: none;
@@ -14,4 +25,9 @@
 
 .navbar>ul>li {
     padding: 5px 20px;
+}
+
+.navbar>ul>li>a {
+    color: #202020;
+    text-decoration: none;
 }
