@@ -13,3 +13,11 @@
 .app__main {
     flex: 0.95;
 }
+
+.app__allContainer {
+    height: max-content;
+}
+
+.app__allContainer>* {
+    margin-bottom: 40vh;
+}

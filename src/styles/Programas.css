@@ -1,0 +1,21 @@
+.programas {
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 50px;
+}
+
+.programas__title {
+    font-family: "Anton", sans-serif;
+    font-size: 3rem;
+}
+
+.programas__list {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

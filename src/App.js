@@ -17,7 +17,18 @@ function App() {
           <Route path="/quien-soy" component={QuienSoy} />
           <Route path="/programas" component={Programas} />
           <Route path="/contacto" component={Contacto} />
-          <Route path="/" exact component={Landing} />
+          <Route
+            path="/"
+            exact
+            render={() => (
+              <div className="app__allContainer">
+                <Landing />
+                <QuienSoy />
+                <Programas />
+                <Contacto />
+              </div>
+            )}
+          />
         </Switch>
       </div>
     </div>
