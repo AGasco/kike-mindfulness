@@ -1,0 +1,17 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+}
+
+.navbar>ul {
+    font-family: 'Asap', sans-serif;
+    font-size: 1.2rem;
+    list-style-type: none;
+    display: flex;
+}
+
+.navbar>ul>li {
+    padding: 5px 20px;
+}
