@@ -23,9 +23,9 @@
     background-size: cover;
     background-position: 0 10%;
     height: 90%;
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
 }
 
 .landing__main>h1 {
@@ -34,13 +34,48 @@
     padding-bottom: 20%;
     font-size: 6rem;
     color: white;
+    position: absolute;
+    left: 20%;
+    top: 25%;
+}
+
+.landing__main>h6 {
+    font-family: 'Wire One', sans-serif;
+    font-size: 2rem;
+    color: white;
+    position: absolute;
+    left: 15%;
+    top: 37.5%;
+}
+
+.landing__main>button {
+    position: absolute;
+    left: 20%;
+    top: 42%;
+    width: 300px;
+    padding: 10px;
+    font-size: 2rem;
+    border-radius: 20px;
+    border: none;
+    font-family: 'Asap', sans-serif;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.landing__main>button:hover {
+    background-color: #ccc
+}
+
+.landing__main>button:focus {
+    outline: none;
 }
 
 .landing__mainSide {
     font-family: 'Darker Grotesque', sans-serif;
+    font-size: 1.1rem;
     color: #202020;
     transform: rotateZ(-90deg);
-    position: absolute;
-    left: -1.5vw;
-    top: 20vh;
+    position: fixed;
+    left: -1vw;
+    bottom: 20vh;
 }
