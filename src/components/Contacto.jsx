@@ -87,7 +87,7 @@ class Contacto extends Component {
               name="comments"
               id=""
               cols="30"
-              rows="10"
+              rows="6"
               value={this.state.comments}
               onChange={this.handleInputChange}
             ></textarea>

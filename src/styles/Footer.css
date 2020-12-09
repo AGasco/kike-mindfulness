@@ -1,0 +1,72 @@
+.footer {
+    background-color: #202020;
+    width: 100%;
+    display: flex;
+    color: #ddd;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.footer__left, .footer__right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.footer__logo {
+    width: 150px;
+    padding: 20px;
+}
+
+.footer__center {
+    height: 100%;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__quote {
+    font-family: "Darker Grotesque", sans-serif;
+    padding: 20px;
+    font-size: 1.2rem;
+}
+
+.footer__center>p {
+    font-family: "Darker Grotesque", sans-serif;
+    font-size: 1.2rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 1rem;
+}
+
+.footer__socialMedia {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.footer__socialMedia>.svg-inline--fa {
+    margin: 0 10px;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.footer__nav {
+    display: flex;
+    justify-content: center;
+}
+
+.footer__nav>ul {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+}
+
+.footer__nav>ul>li {
+    margin: 0 10px;
+    cursor: pointer;
+    font-family: "Asap", sans-serif;
+}
