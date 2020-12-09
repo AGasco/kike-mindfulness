@@ -5,7 +5,6 @@
 }
 
 .navbar__icon {
-    justify-self: flex-start;
     flex: 1;
 }
 
@@ -15,19 +14,22 @@
     text-decoration: none;
 }
 
-.navbar>ul {
+.navbar>nav {
     flex: 1.5;
+}
+
+.navbar>nav>ul {
     font-family: 'Asap', sans-serif;
     font-size: 1.2rem;
     list-style-type: none;
     display: flex;
 }
 
-.navbar>ul>li {
+.navbar>nav>ul>li {
     padding: 5px 20px;
 }
 
-.navbar>ul>li>a {
+.navbar>nav>ul>li>a {
     color: #202020;
     text-decoration: none;
 }

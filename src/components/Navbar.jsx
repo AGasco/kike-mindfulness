@@ -8,17 +8,19 @@ function Navbar() {
       <h1 className="navbar__icon">
         <Link to="/">KIKE MINDFULNESS </Link>
       </h1>
-      <ul>
-        <li>
-          <Link to="/quien-soy">¿QUIÉN SOY?</Link>
-        </li>
-        <li>
-          <Link to="/programas">PROGRAMAS</Link>
-        </li>
-        <li>
-          <Link to="/contacto">CONTÁCTAME</Link>
-        </li>
-      </ul>
+      <nav>
+        <ul>
+          <li>
+            <Link to="/quien-soy">¿QUIÉN SOY?</Link>
+          </li>
+          <li>
+            <Link to="/programas">PROGRAMAS</Link>
+          </li>
+          <li>
+            <Link to="/contacto">CONTÁCTAME</Link>
+          </li>
+        </ul>
+      </nav>
     </div>
   );
 }
