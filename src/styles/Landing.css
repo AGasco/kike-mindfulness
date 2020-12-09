@@ -29,10 +29,15 @@
     top: 37.5%;
 }
 
-.landing>button {
+.landing>a {
     position: absolute;
     left: 20%;
     top: 42%;
+    text-decoration: none;
+    color: #202020;
+}
+
+.landing>a>button {
     width: 300px;
     padding: 10px;
     font-size: 2rem;
@@ -43,16 +48,11 @@
     transition: all 0.2s;
 }
 
-.landing>button>a {
-    text-decoration: none;
-    color: #202020;
-}
-
-.landing>button:hover {
+.landing>a>button:hover {
     background-color: #ccc
 }
 
-.landing>button:focus {
+.landing>a>button:focus {
     outline: none;
 }
 

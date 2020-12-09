@@ -37,13 +37,13 @@ function App() {
                   <QuienSoy />
                   <Programas programas={data.default} />
                   <Contacto programas={data.default} />
+                  <Footer />
                 </div>
               )}
             />
           </Switch>
         </div>
       </div>
-      <Footer />
     </div>
   );
 }

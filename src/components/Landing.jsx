@@ -11,9 +11,9 @@ function Landing() {
       </div>
       <h1>KIKE MINDFULNESS</h1>
       <h6>Aprende a meditar y recupera tu sensación de paz y bienestar</h6>
-      <button>
-        <Link to="/programas">RESERVA AHORA</Link>
-      </button>
+      <Link to="/programas">
+        <button>RESERVA AHORA</button>
+      </Link>
     </div>
   );
 }
