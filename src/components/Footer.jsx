@@ -13,7 +13,9 @@ function Footer() {
   return (
     <div className="footer">
       <div className="footer__left">
-        <img className="footer__logo" src={logo} alt="KikeMindfulness Logo" />
+        <a href="/#">
+          <img className="footer__logo" src={logo} alt="KikeMindfulness Logo" />
+        </a>
       </div>
       <div className="footer__center">
         <div className="footer__quote">
@@ -21,20 +23,20 @@ function Footer() {
             "Cada mañana nacemos de nuevo. Lo que hacemos hoy es lo que más
             importa" -
           </em>{" "}
-          Siddharta 'Buddha' Gautama
+          Siddhartha 'Buddha' Gautama
         </div>
 
         <p>Sígueme en las redes sociales</p>
 
         <div className="footer__socialMedia">
-          <a href="https://google.com" target="_blank">
+          <a href="https://google.com" target="_blank" rel="noreferrer">
             <FontAwesomeIcon icon={faInstagram} />
           </a>
-          <a href="https://google.com" target="_blank">
+          <a href="https://google.com" target="_blank" rel="noreferrer">
             <FontAwesomeIcon icon={faFacebookSquare} />
           </a>
 
-          <a href="https://google.com" target="_blank">
+          <a href="https://google.com" target="_blank" rel="noreferrer">
             <FontAwesomeIcon icon={faYoutube} />
           </a>
         </div>
@@ -43,7 +45,7 @@ function Footer() {
         <div className="footer__nav">
           <ul>
             <li>
-              <Link to="/">HOME</Link>
+              <a href="/#">HOME</a>
             </li>
             <li>
               <Link to="/quien-soy">QUIÉN SOY</Link>

@@ -3,6 +3,7 @@ import Landing from "./components/Landing";
 import QuienSoy from "./components/QuienSoy";
 import LeadGenerator from "./components/LeadGenerator";
 import Programas from "./components/Programas";
+import ProgramaPage from "./components/ProgramaPage";
 import Contacto from "./components/Contacto";
 import Footer from "./components/Footer";
 import { Route, Switch } from "react-router-dom";
@@ -13,7 +14,7 @@ function App() {
   console.log("data", data.default);
 
   return (
-    <div className="app">
+    <div className="app" id="#">
       <div className="app__container">
         <div className="app__top">
           <Navbar />
@@ -21,9 +22,9 @@ function App() {
         <div className="app__main">
           <Switch>
             <Route path="/quien-soy" component={QuienSoy} />
+            <Route path="/programas/:id" component={ProgramaPage} />
             <Route
               path="/programas"
-              exact
               render={() => <Programas programas={data.default} />}
             />
             <Route
