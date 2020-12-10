@@ -5,6 +5,7 @@ import {
   faFacebookSquare,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons/";
+import { Link } from "react-router-dom";
 import logo from "./../imgs/logo.png";
 import "./../styles/Footer.css";
 
@@ -26,17 +27,30 @@ function Footer() {
         <p>Sígueme en las redes sociales</p>
 
         <div className="footer__socialMedia">
-          <FontAwesomeIcon icon={faInstagram} />
-          <FontAwesomeIcon icon={faFacebookSquare} />
-          <FontAwesomeIcon icon={faYoutube} />
+          <a href="https://google.com" target="_blank">
+            <FontAwesomeIcon icon={faInstagram} />
+          </a>
+          <a href="https://google.com" target="_blank">
+            <FontAwesomeIcon icon={faFacebookSquare} />
+          </a>
+
+          <a href="https://google.com" target="_blank">
+            <FontAwesomeIcon icon={faYoutube} />
+          </a>
         </div>
       </div>
       <div className="footer__right">
         <div className="footer__nav">
           <ul>
-            <li>HOME</li>
-            <li>QUIÉN SOY</li>
-            <li>PROGRAMAS</li>
+            <li>
+              <Link to="/">HOME</Link>
+            </li>
+            <li>
+              <Link to="/quien-soy">QUIÉN SOY</Link>
+            </li>
+            <li>
+              <Link to="/programas">PROGRAMAS</Link>
+            </li>
           </ul>
         </div>
       </div>

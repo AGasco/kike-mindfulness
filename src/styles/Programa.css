@@ -41,6 +41,11 @@
     font-family: 'Wire One', sans-serif;
 }
 
+.programa__button>a {
+    color: inherit;
+    text-decoration: none;
+}
+
 .programa__button:hover {
     color: white;
     box-shadow: 2px 2px 5px rgba(255, 239, 158, 0.8), -2px -2px 5px rgba(255, 239, 158, 0.8);

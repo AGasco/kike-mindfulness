@@ -13,6 +13,7 @@ function Programas({ programas }) {
               title={p.title}
               picture={p.picture}
               description={p.description}
+              url={p.url}
             />
           </li>
         ))}

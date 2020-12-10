@@ -1,0 +1,56 @@
+.leadGenerator {
+    height: 100%;
+}
+
+.leadGenerator__pre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 50px 0 50px 0;
+    /* Background pattern from Toptal Subtle Patterns */
+    background-image: url("./../imgs/binding_dark.png");
+    color: white;
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+}
+
+.leadGenerator__pre>h4 {
+    font-family: "Anton", sans-serif;
+    font-size: 3rem;
+    padding-bottom: 20px;
+}
+
+.leadGenerator__pre>p {
+    font-family: "Asap", sans-serif;
+    width: 60%;
+    text-align: center;
+}
+
+.leadGenerator__pre>button {
+    width: 300px;
+    padding: 10px;
+    font-size: 2rem;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Asap', sans-serif;
+    cursor: pointer;
+    transition: all 0.2s;
+    margin-top: 5vh;
+    outline: none;
+}
+
+.leadGenerator__pre>button:hover {
+    background-color: #ccc
+}
+
+.leadGenerator__pre>button:active {
+    transform: scale(0.95);
+}
+
+.leadGenerator__post {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}

@@ -1,6 +1,7 @@
 import Navbar from "./components/Navbar";
 import Landing from "./components/Landing";
 import QuienSoy from "./components/QuienSoy";
+import LeadGenerator from "./components/LeadGenerator";
 import Programas from "./components/Programas";
 import Contacto from "./components/Contacto";
 import Footer from "./components/Footer";
@@ -22,6 +23,7 @@ function App() {
             <Route path="/quien-soy" component={QuienSoy} />
             <Route
               path="/programas"
+              exact
               render={() => <Programas programas={data.default} />}
             />
             <Route
@@ -35,6 +37,7 @@ function App() {
                 <div className="app__allContainer">
                   <Landing />
                   <QuienSoy />
+                  <LeadGenerator />
                   <Programas programas={data.default} />
                   <Contacto programas={data.default} />
                   <Footer />
