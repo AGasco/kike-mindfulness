@@ -1,12 +1,15 @@
 .contacto {
     height: 100%;
     background-color: white;
+    padding-top: 50px;
+    margin-bottom: 15vh !important;
+}
+
+.contacto__container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    padding-top: 50px;
-    margin-bottom: 15vh !important;
 }
 
 .contacto__title {
@@ -21,7 +24,7 @@
     font-size: 1.3rem;
 }
 
-.contacto>form {
+.contacto form {
     padding: 20px;
     padding-top: 5px;
     /* font-family: "Anton", sans-serif;
@@ -73,4 +76,22 @@
 
 .contacto__submit:active {
     transform: scale(0.95);
+}
+
+.contacto__lead {
+    max-width: 40vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10vh;
+}
+
+.contacto__leadTitle, .contacto__leadSubtitle {
+    font-family: "Asap", sans-serif;
+    padding-bottom: 30px;
+}
+
+.contacto__leadSubtitle {
+    font-size: 1.5rem;
 }

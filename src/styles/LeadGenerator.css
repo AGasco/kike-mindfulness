@@ -2,7 +2,7 @@
     height: 100%;
 }
 
-.leadGenerator__pre {
+.leadGenerator__container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,19 +15,19 @@
     border-bottom-left-radius: 60px;
 }
 
-.leadGenerator__pre>h4 {
+.leadGenerator__container>h4 {
     font-family: "Anton", sans-serif;
     font-size: 3rem;
     padding-bottom: 20px;
 }
 
-.leadGenerator__pre>p {
+.leadGenerator__container>p {
     font-family: "Asap", sans-serif;
     width: 60%;
     text-align: center;
 }
 
-.leadGenerator__pre>button {
+.leadGenerator__container button {
     width: 300px;
     padding: 10px;
     font-size: 2rem;
@@ -40,17 +40,10 @@
     outline: none;
 }
 
-.leadGenerator__pre>button:hover {
+.leadGenerator__container button:hover {
     background-color: #ccc
 }
 
-.leadGenerator__pre>button:active {
+.leadGenerator__container button:active {
     transform: scale(0.95);
-}
-
-.leadGenerator__post {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
 }
