@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import emailjs from "emailjs-com";
 import "./../styles/Contacto.css";
 
 class Contacto extends Component {
@@ -16,7 +17,22 @@ class Contacto extends Component {
 
   handleSubmit = (e) => {
     e.preventDefault();
-    console.log(this.state);
+
+    const { name, email, phone, program, comments } = this.state;
+
+    emailjs.send(
+      "service_w0jpx6d",
+      "template_l4haweq",
+      {
+        from_name: name,
+        from_email: email,
+        from_phone: phone,
+        programa: program,
+        message: comments,
+      },
+      "user_vqapMN2t3KdfleZZ8879Z"
+    );
+
     console.log("submitted");
   };
 
