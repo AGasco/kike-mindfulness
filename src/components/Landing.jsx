@@ -1,18 +1,18 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
 import "./../styles/Landing.css";
 
 function Landing() {
   return (
-    <div className="landing">
+    <div className="landing" id="landing">
       <div className="landing__mainSide">
         <p>kikemindfulness@gmail.com - 620648806</p>
       </div>
       <h1>KIKE MINDFULNESS</h1>
       <h6>Aprende a meditar y recupera tu sensación de paz y bienestar</h6>
-      <Link to="/programas">
+      <ScrollLink to="programas" smooth={true} duration={800}>
         <button>RESERVA AHORA</button>
-      </Link>
+      </ScrollLink>
     </div>
   );
 }

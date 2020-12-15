@@ -4,7 +4,7 @@ import "./../styles/Programas.css";
 
 function Programas({ programas }) {
   return (
-    <div className="programas">
+    <div className="programas" id="programas">
       <h1 className="programas__title">MIS PROGRAMAS</h1>
       <ul className="programas__list">
         {programas.map((p) => (

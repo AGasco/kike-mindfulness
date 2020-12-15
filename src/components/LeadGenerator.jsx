@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
 import "./../styles/LeadGenerator.css";
 
 class LeadGenerator extends Component {
@@ -17,14 +17,14 @@ class LeadGenerator extends Component {
             esse ab vitae cupiditate delectus, similique rerum quas praesentium
             neque modi!
           </p>
-          <Link to="/contacto">
+          <ScrollLink to="contacto" smooth={true} duration={600}>
             <button
               className="leadGenerator__button"
               onClick={this.props.onLeadClick}
             >
               ¡ Lorem !
             </button>
-          </Link>
+          </ScrollLink>
         </div>
       </div>
     );

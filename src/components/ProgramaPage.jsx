@@ -35,8 +35,11 @@ class ProgramaPage extends Component {
           sunt nisi, odit unde ullam doloribus eveniet nemo quo molestiae!
         </p>
         <div className="programaPage__buttons">
-          <button className="programaPage__backBtn">
-            <Link to="/programas">Volver a Programas</Link>
+          <button
+            className="programaPage__backBtn"
+            onClick={this.props.history.goBack}
+          >
+            Volver a Programas
           </button>
           <button className="programaPage__confirmBtn">
             <Link to={`/contacto/${programa.id}`}> ¡ Estoy interesado !</Link>

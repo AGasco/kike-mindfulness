@@ -17,8 +17,10 @@ class Contacto extends Component {
 
   componentDidMount() {
     if (this.props.match) {
+      const userData = { ...this.state.userData };
+      userData.program = this.props.match.params.id;
       this.setState({
-        program: this.props.match.params.id,
+        userData,
       });
     }
   }
@@ -59,7 +61,7 @@ class Contacto extends Component {
     const { name, email, phone, program, comments } = this.state.userData;
 
     return (
-      <div className="contacto">
+      <div className="contacto" id="contacto">
         {!this.state.submitted ? (
           <div className="contacto__container">
             <h1 className="contacto__title">CONTACTO</h1>

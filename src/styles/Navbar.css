@@ -2,6 +2,7 @@
     display: flex;
     align-items: flex-end;
     justify-content: flex-start;
+    margin-bottom: 0 !important;
 }
 
 .navbar__icon {
@@ -32,4 +33,5 @@
 .navbar>nav>ul>li>a {
     color: #202020;
     text-decoration: none;
+    cursor: pointer;
 }

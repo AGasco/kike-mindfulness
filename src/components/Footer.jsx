@@ -5,7 +5,7 @@ import {
   faFacebookSquare,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons/";
-import { Link } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
 import logo from "./../imgs/logo.png";
 import "./../styles/Footer.css";
 
@@ -13,9 +13,9 @@ function Footer() {
   return (
     <div className="footer">
       <div className="footer__left">
-        <a href="/#">
+        <ScrollLink to="root" smooth={true} duration={1000}>
           <img className="footer__logo" src={logo} alt="KikeMindfulness Logo" />
-        </a>
+        </ScrollLink>
       </div>
       <div className="footer__center">
         <div className="footer__quote">
@@ -45,13 +45,19 @@ function Footer() {
         <div className="footer__nav">
           <ul>
             <li>
-              <a href="/#">HOME</a>
+              <ScrollLink to="root" smooth={true} duration={1000}>
+                HOME
+              </ScrollLink>
             </li>
             <li>
-              <Link to="/quien-soy">QUIÉN SOY</Link>
+              <ScrollLink to="quienSoy" smooth={true} duration={800}>
+                QUIÉN SOY
+              </ScrollLink>
             </li>
             <li>
-              <Link to="/programas">PROGRAMAS</Link>
+              <ScrollLink to="programas" smooth={true} duraction={600}>
+                PROGRAMAS
+              </ScrollLink>
             </li>
           </ul>
         </div>

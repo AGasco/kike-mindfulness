@@ -6,7 +6,7 @@ import "./../styles/reactPlayer.css";
 
 function QuienSoy() {
   return (
-    <div className="quienSoy">
+    <div className="quienSoy" id="quienSoy">
       <h1 className="quienSoy__title">¿QUIÉN SOY?</h1>
       <p className="quienSoy__description">
         Hola, soy Kike. Me dedico a ayudar a personas con estrés y ansiedad a

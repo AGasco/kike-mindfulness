@@ -12,9 +12,14 @@ import * as data from "./data.json";
 import "./App.css";
 
 class App extends Component {
-  state = {
-    leadGeneratorClicked: false,
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      leadGeneratorClicked: false,
+    };
+  }
+
+  componentDidUpdate() {}
 
   handleLeadGeneratorClicked = () => {
     this.setState({
@@ -26,52 +31,45 @@ class App extends Component {
     return (
       <div className="app" id="#">
         <div className="app__container">
-          <div className="app__top">
-            <Navbar />
-          </div>
+          <div className="app__top"></div>
           <div className="app__main">
             <Switch>
-              <Route path="/quien-soy" component={QuienSoy} />
-              <Route path="/programas/:id" component={ProgramaPage} />
               <Route
-                path="/programas"
-                render={() => <Programas programas={data.default} />}
+                path="/programas/:id"
+                render={(props) => (
+                  <React.Fragment>
+                    <Navbar hidden />
+                    <ProgramaPage {...props} />
+                  </React.Fragment>
+                )}
               />
               <Route
                 path="/contacto/:id"
                 render={(props) => (
-                  <Contacto
-                    programas={data.default}
-                    match={props.match}
-                    leadClicked={this.state.leadGeneratorClicked}
-                  />
-                )}
-              />
-              <Route
-                path="/contacto"
-                render={() => (
-                  <Contacto
-                    programas={data.default}
-                    leadClicked={this.state.leadGeneratorClicked}
-                  />
-                )}
-              />
-              <Route
-                path="/"
-                exact
-                render={() => (
-                  <div className="app__allContainer">
-                    <Landing />
-                    <QuienSoy />
-                    <LeadGenerator
-                      onLeadClick={this.handleLeadGeneratorClicked}
+                  <React.Fragment>
+                    <Navbar hidden />
+                    <Contacto
+                      programas={data.default}
+                      match={props.match}
+                      leadClicked={this.state.leadGeneratorClicked}
                     />
-                    <Programas programas={data.default} />
-                    <Contacto programas={data.default} />
-                    <Footer />
-                  </div>
+                  </React.Fragment>
                 )}
               />
+
+              <Route path="/" exact>
+                <div className="app__allContainer">
+                  <Navbar />
+                  <Landing />
+                  <QuienSoy />
+                  <LeadGenerator
+                    onLeadClick={this.handleLeadGeneratorClicked}
+                  />
+                  <Programas programas={data.default} />
+                  <Contacto programas={data.default} />
+                  <Footer />
+                </div>
+              </Route>
             </Switch>
           </div>
         </div>

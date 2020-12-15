@@ -1,28 +1,39 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { Component } from "react";
+import { Link as RouterLink } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
 import "./../styles/Navbar.css";
 
-function Navbar() {
-  return (
-    <div className="navbar">
-      <h1 className="navbar__icon">
-        <Link to="/">KIKE MINDFULNESS </Link>
-      </h1>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/quien-soy">¿QUIÉN SOY?</Link>
-          </li>
-          <li>
-            <Link to="/programas">PROGRAMAS</Link>
-          </li>
-          <li>
-            <Link to="/contacto">CONTÁCTAME</Link>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  );
+class Navbar extends Component {
+  render() {
+    return (
+      <div className="navbar">
+        <h1 className="navbar__icon">
+          <RouterLink to="/">KIKE MINDFULNESS </RouterLink>
+        </h1>
+        <nav>
+          {!this.props.hidden && (
+            <ul>
+              <li>
+                <ScrollLink to="quienSoy" smooth={true} duration={600}>
+                  ¿QUIÉN SOY?
+                </ScrollLink>
+              </li>
+              <li>
+                <ScrollLink to="programas" smooth={true} duration={800}>
+                  PROGRAMAS
+                </ScrollLink>
+              </li>
+              <li>
+                <ScrollLink to="contacto" smooth={true} duration={1000}>
+                  CONTÁCTAME
+                </ScrollLink>
+              </li>
+            </ul>
+          )}
+        </nav>
+      </div>
+    );
+  }
 }
 
 export default Navbar;
