@@ -1,0 +1,7 @@
+.react-player__preview {
+    border: 1px solid black;
+}
+
+.react-player__play-icon {
+    border-width: 26px 0 26px 40px !important;
+}

@@ -11,6 +11,18 @@ class Contacto extends Component {
     comments: "",
   };
 
+  componentDidMount() {
+    if (this.props.match) {
+      this.setState({
+        program: this.props.match.params.id,
+      });
+    }
+  }
+
+  componentDidUpdate() {
+    console.log(this.state);
+  }
+
   handleInputChange = (e) => {
     this.setState({ [e.target.name]: e.target.value });
   };
@@ -91,7 +103,7 @@ class Contacto extends Component {
             >
               <option value=""></option>
               {this.props.programas.map((p) => (
-                <option key={p.title} value={p.title}>
+                <option key={p.title} value={p.id}>
                   {p.title}
                 </option>
               ))}

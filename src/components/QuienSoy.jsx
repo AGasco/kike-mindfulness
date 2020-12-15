@@ -1,6 +1,8 @@
 import React from "react";
-import ReactPlayer from "react-player";
+import ReactPlayer from "react-player/youtube";
+import Thumbnail from "./../imgs/landing2.jpg";
 import "./../styles/QuienSoy.css";
+import "./../styles/reactPlayer.css";
 
 function QuienSoy() {
   return (
@@ -15,6 +17,8 @@ function QuienSoy() {
         width={640}
         height={360}
         controls={true}
+        playing={true}
+        light={Thumbnail}
         url="https://www.youtube.com/watch?v=r5pXw5jmf64"
       />
     </div>

@@ -28,6 +28,12 @@ function App() {
               render={() => <Programas programas={data.default} />}
             />
             <Route
+              path="/contacto/:id"
+              render={(props) => (
+                <Contacto programas={data.default} match={props.match} />
+              )}
+            />
+            <Route
               path="/contacto"
               render={() => <Contacto programas={data.default} />}
             />
