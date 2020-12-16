@@ -7,17 +7,21 @@
 
 .navbar__icon {
     flex: 1;
+    max-width: max-content;
 }
 
 .navbar__icon>a {
     font-family: 'Asap', sans-serif;
     color: #202020;
     text-decoration: none;
+    white-space: nowrap;
 }
 
 .navbar>nav {
     flex: 1.5;
     display: flex;
+    justify-content: center;
+    padding-right: 20%;
     align-items: center;
     position: relative;
 }
@@ -56,4 +60,87 @@
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     cursor: pointer;
+}
+
+@media (max-width: 1550px) {
+    .navbar>nav {
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 1250px) {
+    .navbar>nav>ul>li {
+        padding: 5px 10px;
+    }
+    .navbar__cta {
+        top: -24px;
+    }
+    .navbar__cta>button {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 1120px) {
+    .navbar>nav>ul {
+        font-size: 1rem;
+        padding-left: 10% !important;
+    }
+    .navbar__cta {
+        top: -14px;
+    }
+    .navbar__cta>button {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 970px) {
+    .navbar>nav>ul {
+        font-size: 1rem;
+        padding-left: 3% !important;
+    }
+    .navbar__icon>a {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 844px) {
+    .navbar>nav>ul {
+        display: none;
+    }
+    .navbar__cta {
+        top: -42px;
+    }
+}
+
+@media (max-width: 451px) {
+    .navbar__cta {
+        top: -37px;
+    }
+    .navbar__cta>button {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 411px) {
+    .navbar__icon>a {
+        font-size: 1.2rem;
+    }
+    .navbar__cta {
+        top: -37px;
+    }
+    /* .navbar__cta>button {
+        font-size: 0.7rem;
+    } */
+}
+
+@media (max-width: 370px) {
+    .navbar__icon>a {
+        font-size: 1rem;
+    }
+    .navbar__cta {
+        top: -34px;
+    }
+    .navbar__cta>button {
+        font-size: 0.8rem;
+    }
 }

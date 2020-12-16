@@ -1,8 +1,12 @@
 .quienSoy {
     height: 100%;
+    width: 100%;
     background-color: white;
     padding-top: 100px;
     padding-right: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .quienSoy__container {
@@ -27,4 +31,33 @@
 
 .quienSoy__video {
     margin: 5vh auto auto 45%;
+}
+
+@media (max-width: 1200px) {
+    .quienSoy {
+        padding-right: 0;
+    }
+    .quienSoy__title {
+        padding-left: 0;
+    }
+    .quienSoy__video {
+        margin: 50px auto auto auto;
+    }
+}
+
+@media (max-width: 700px) {
+    .quienSoy__video {
+        width: 480px !important;
+        height: 270px !important;
+    }
+}
+
+@media (max-width: 530px) {
+    .quienSoy__video {
+        width: 320px !important;
+        height: 180px !important;
+    }
+    .quienSoy__description {
+        width: 80%;
+    }
 }

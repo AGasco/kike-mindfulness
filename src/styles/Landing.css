@@ -62,3 +62,154 @@
     left: -3vw;
     bottom: 20vh;
 }
+
+@media (max-width: 1700px) {
+    .landing>h6 {
+        left: 8%;
+    }
+    .landing__mainSide {
+        left: -5vw;
+    }
+}
+
+@media (max-width: 1550px) {
+    .landing>h1 {
+        font-size: 5rem;
+        top: 27.5%;
+    }
+    .landing>h6 {
+        font-size: 2.3rem;
+    }
+    .landing__mainSide {
+        left: -7vw;
+    }
+}
+
+@media (max-width: 1200px) {
+    .landing__mainSide {
+        left: -10vw;
+    }
+}
+
+@media (max-width: 960px) {
+    .landing__mainSide {
+        left: -13vw;
+    }
+}
+
+@media (max-width: 795px) {
+    .landing__mainSide {
+        left: -16vw;
+    }
+}
+
+@media (max-width: 755px) {
+    .landing {
+        background-position: 50% 50%;
+    }
+    .landing>h1 {
+        white-space: nowrap;
+        font-size: 5rem;
+        top: auto;
+        bottom: -10%;
+        font-size: 4rem;
+    }
+    .landing>h6 {
+        top: auto;
+        bottom: 16%;
+        left: 16%;
+        font-size: 2rem;
+    }
+    .landing__mainSide {
+        left: -17vw;
+    }
+}
+
+@media (max-width: 650px) {
+    .landing__mainSide {
+        left: -20vw;
+    }
+}
+
+@media (max-width: 600px) {
+    .landing>h1 {
+        font-size: 3.5rem;
+        bottom: -5%;
+        left: 15%;
+    }
+    .landing>h6 {
+        bottom: 14%;
+        left: 16%;
+        font-size: 1.6rem;
+    }
+    .landing__mainSide {
+        left: -21vw;
+    }
+}
+
+@media (max-width: 550px) {
+    .landing__mainSide {
+        left: -23vw;
+    }
+}
+
+@media (max-width: 517px) {
+    .landing__mainSide {
+        left: -25vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .landing>h1 {
+        font-size: 2.5rem;
+        bottom: -2%;
+        left: 10%;
+    }
+    .landing>h6 {
+        bottom: 14%;
+        left: 7%;
+        font-size: 1.6rem;
+    }
+    .landing__mainSide {
+        left: -27vw;
+    }
+}
+
+@media (max-width: 448px) {
+    .landing__mainSide {
+        left: -29vw;
+    }
+}
+
+@media (max-width: 421px) {
+    .landing__mainSide {
+        left: -31vw;
+    }
+}
+
+@media (max-width: 400px) {
+    .landing__mainSide {
+        left: -33vw;
+    }
+}
+
+@media (max-width: 380px) {
+    .landing>h1 {
+        bottom: 0;
+    }
+    .landing>h6 {
+        font-size: 1.4rem;
+        bottom: 60%;
+        text-align: center;
+        left: 7%;
+    }
+    .landing__mainSide {
+        left: -35vw;
+    }
+}
+
+@media (max-width: 350px) {
+    .landing__mainSide {
+        display: none;
+    }
+}
