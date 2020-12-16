@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import emailjs from "emailjs-com";
 import ReactPlayer from "react-player/youtube";
+import { Link } from "react-router-dom";
 import "./../styles/Contacto.css";
 
 class Contacto extends Component {
@@ -163,10 +164,15 @@ class Contacto extends Component {
                 />
               </div>
             ) : (
-              <h1 className="contacto__leadTitle">
-                Gracias por contactar conmigo. Tendrás una respuesta mía lo
-                antes posible
-              </h1>
+              <div className="contacto__graciasContainer">
+                <h1 className="contacto__leadTitle">
+                  Gracias por contactar conmigo. Tendrás una respuesta mía lo
+                  antes posible
+                </h1>
+                <a className="contacto__volver" href="/#">
+                  <button>Volver</button>
+                </a>
+              </div>
             )}
           </div>
         )}

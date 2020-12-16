@@ -1,12 +1,16 @@
 .quienSoy {
     height: 100%;
     background-color: white;
+    padding-top: 100px;
+    padding-right: 20%;
+}
+
+.quienSoy__container {
+    padding-top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    padding-top: 100px;
-    padding-right: 20%;
 }
 
 .quienSoy__title {

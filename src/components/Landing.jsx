@@ -10,9 +10,9 @@ function Landing() {
       </div>
       <h1>KIKE MINDFULNESS</h1>
       <h6>Aprende a meditar y recupera tu sensación de paz y bienestar</h6>
-      <ScrollLink to="programas" smooth={true} duration={800}>
+      {/* <ScrollLink to="programas" smooth={true} duration={800}>
         <button>RESERVA AHORA</button>
-      </ScrollLink>
+      </ScrollLink> */}
     </div>
   );
 }

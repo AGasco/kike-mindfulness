@@ -16,15 +16,17 @@
     position: absolute;
     left: 20%;
     top: 25%;
+    /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; */
 }
 
 .landing>h6 {
     font-family: 'Wire One', sans-serif;
-    font-size: 2rem;
+    font-size: 2.75rem;
     color: white;
     position: absolute;
-    left: 15%;
+    left: 12%;
     top: 37.5%;
+    /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; */
 }
 
 .landing>a {

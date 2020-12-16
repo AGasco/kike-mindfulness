@@ -10,8 +10,9 @@ class Navbar extends Component {
         <h1 className="navbar__icon">
           <RouterLink to="/">KIKE MINDFULNESS </RouterLink>
         </h1>
-        <nav>
-          {!this.props.hidden && (
+
+        {!this.props.hidden && (
+          <nav>
             <ul>
               <li>
                 <ScrollLink to="quienSoy" smooth={true} duration={600}>
@@ -29,8 +30,16 @@ class Navbar extends Component {
                 </ScrollLink>
               </li>
             </ul>
-          )}
-        </nav>
+            <ScrollLink
+              className="navbar__cta"
+              to="programas"
+              smooth={true}
+              duration={800}
+            >
+              <button>RESERVA AHORA</button>
+            </ScrollLink>
+          </nav>
+        )}
       </div>
     );
   }
