@@ -26,7 +26,9 @@ function Footer() {
           Siddhartha 'Buddha' Gautama
         </div>
 
-        <p>Sígueme en las redes sociales</p>
+        <p className="footer__socialMediaTitle">
+          Sígueme en las redes sociales
+        </p>
 
         <div className="footer__socialMedia">
           <a href="https://google.com" target="_blank" rel="noreferrer">

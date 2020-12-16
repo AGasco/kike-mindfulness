@@ -1,11 +1,12 @@
 .contacto {
-    height: 100vh;
+    min-height: 100vh;
     background-color: white;
     padding-top: 50px;
     margin-bottom: 15vh !important;
 }
 
 .contacto__container {
+    min-height: max-content;
     padding-top: 50px;
     display: flex;
     flex-direction: column;
@@ -23,6 +24,7 @@
     font-family: "Asap", sans-serif; */
     font-family: "Darker Grotesque", sans-serif;
     font-size: 1.3rem;
+    text-align: center;
 }
 
 .contacto form {
@@ -34,6 +36,8 @@
     font-family: "Wire One", sans-serif;
     font-size: 2rem;
     width: 50vw;
+    max-width: 90vw !important;
+    min-width: 450px;
 }
 
 .contacto__horizFormElem {
@@ -122,4 +126,45 @@
 .contacto__volver>button:hover {
     color: white;
     box-shadow: 2px 2px 5px rgba(255, 239, 158, 0.8), -2px -2px 5px rgba(255, 239, 158, 0.8);
+}
+
+@media (max-width: 1270px) {
+    .contacto__submit {
+        font-size: 3rem !important;
+    }
+}
+
+@media (max-width: 980px) {
+    .contacto__submit {
+        font-size: 2.5rem !important;
+    }
+}
+
+@media (max-width: 450px) {
+    .contacto {
+        margin-bottom: 30vh !important;
+    }
+    .contacto__horizFormElem {
+        flex-direction: column;
+    }
+    .contacto__submit {
+        font-size: 2rem !important;
+    }
+    .contacto form {
+        font-size: 1.7rem;
+        min-width: 350px;
+    }
+    .contacto__formElem>input, .contacto__formElem>select, .contacto__formElem>textarea {
+        padding: 5px;
+        font-size: 1.7rem;
+    }
+}
+
+@media (max-width: 350px) {
+    .contacto form {
+        min-width: 290px;
+    }
+    .contacto__submit {
+        font-size: 1.5rem !important;
+    }
 }

@@ -1,5 +1,6 @@
 .programa {
     width: 20vw;
+    min-width: 300px;
     height: 50vh;
     background-color: #f0f0f0;
     display: flex;
@@ -10,7 +11,7 @@
 
 .programa__picture {
     object-fit: cover;
-    width: 20vw;
+    width: 100%;
     height: 20vh;
 }
 
@@ -49,4 +50,17 @@
 .programa__button:hover {
     color: white;
     box-shadow: 2px 2px 5px rgba(255, 239, 158, 0.8), -2px -2px 5px rgba(255, 239, 158, 0.8);
+}
+
+@media (max-width: 1120px) {
+    .programa {
+        width: 30vw;
+    }
+}
+
+@media (max-width: 500px) {
+    .programa {
+        width: 30vw;
+        margin-bottom: 50px;
+    }
 }

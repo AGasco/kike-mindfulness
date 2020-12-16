@@ -18,8 +18,15 @@
 }
 
 .programas__list {
+    padding-left: 0;
     list-style-type: none;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media (max-width: 1120px) {
+    .programas__list {
+        flex-direction: column;
+    }
 }
