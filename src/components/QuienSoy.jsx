@@ -1,8 +1,8 @@
 import React from "react";
 import ReactPlayer from "react-player/youtube";
 import Thumbnail from "./../imgs/landing2.jpg";
-import "./../styles/QuienSoy.css";
 import "./../styles/reactPlayer.css";
+import "./../styles/QuienSoy.css";
 
 function QuienSoy() {
   return (
@@ -10,8 +10,8 @@ function QuienSoy() {
       <div className="quienSoy__container">
         <h1 className="quienSoy__title">¿QUIÉN SOY?</h1>
         <p className="quienSoy__description">
-          Hola, soy Kike. Me dedico a ayudar a personas con estrés y ansiedad a
-          entrenar su mente y así recuperar su sensación de paz y bienestar
+          ¡Hola, soy Kike! Ayudo a personas con estrés y ansiedad a entrenar su
+          mente para recuperar su sensación de paz y bienestar
         </p>
         <ReactPlayer
           className="quienSoy__video"

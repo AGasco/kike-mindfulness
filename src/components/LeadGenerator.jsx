@@ -1,5 +1,7 @@
 import React, { Component } from "react";
-import { Link as ScrollLink } from "react-scroll";
+import ReactPlayer from "react-player/youtube";
+import Thumbnail from "./../imgs/landing2.jpg";
+import "./../styles/reactPlayer.css";
 import "./../styles/LeadGenerator.css";
 
 class LeadGenerator extends Component {
@@ -8,23 +10,22 @@ class LeadGenerator extends Component {
       <div className="leadGenerator">
         <div className="leadGenerator__container">
           <h4>
-            ¿Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Doloremque, corrupti?
+            ¿Tienes constantemente pensamientos negativos y tu mente se centra
+            siempre en lo peor de cada situación?
           </h4>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
-            suscipit natus facilis necessitatibus ex ea odit rem veniam ipsam
-            esse ab vitae cupiditate delectus, similique rerum quas praesentium
-            neque modi!
+            No te preocupes, ¡es algo completamente normal! En este video te
+            muestro por qué sucede
           </p>
-          <ScrollLink to="contacto" smooth={true} duration={600}>
-            <button
-              className="leadGenerator__button"
-              onClick={this.props.onLeadClick}
-            >
-              ¡ Lorem !
-            </button>
-          </ScrollLink>
+          <ReactPlayer
+            className="leadGenerator__video"
+            width={640}
+            height={360}
+            controls={true}
+            playing={true}
+            light={Thumbnail}
+            url="https://www.youtube.com/watch?v=ltmO9XQVdSg"
+          />
         </div>
       </div>
     );

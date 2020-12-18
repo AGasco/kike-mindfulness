@@ -10,23 +10,10 @@ import { Route, Switch } from "react-router-dom";
 import React, { Component } from "react";
 import * as data from "./data.json";
 import "./App.css";
+import HappyPeople from "./components/HappyPeople";
+import Testimonios from "./components/Testimonios";
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      leadGeneratorClicked: false,
-    };
-  }
-
-  componentDidUpdate() {}
-
-  handleLeadGeneratorClicked = () => {
-    this.setState({
-      leadGeneratorClicked: true,
-    });
-  };
-
   render() {
     return (
       <div className="app" id="#">
@@ -62,10 +49,10 @@ class App extends Component {
                   <Navbar />
                   <Landing />
                   <QuienSoy />
-                  <LeadGenerator
-                    onLeadClick={this.handleLeadGeneratorClicked}
-                  />
                   <Programas programas={data.default} />
+                  <HappyPeople />
+                  <LeadGenerator />
+                  <Testimonios />
                   <Contacto programas={data.default} />
                   <Footer />
                 </div>

@@ -1,7 +1,6 @@
 .contacto {
     min-height: 100vh;
     background-color: white;
-    padding-top: 50px;
     margin-bottom: 15vh !important;
 }
 
@@ -23,7 +22,7 @@
     /* font-family: "Anton", sans-serif;
     font-family: "Asap", sans-serif; */
     font-family: "Darker Grotesque", sans-serif;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     text-align: center;
 }
 

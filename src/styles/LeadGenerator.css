@@ -20,36 +20,20 @@
 
 .leadGenerator__container>h4 {
     font-family: "Anton", sans-serif;
-    font-size: 3rem;
-    padding-bottom: 20px;
+    font-size: 2rem;
+    padding: 0 10px 10px 10px;
     text-align: center;
 }
 
 .leadGenerator__container>p {
     font-family: "Asap", sans-serif;
+    font-size: 1.3rem;
     width: 60%;
     text-align: center;
 }
 
-.leadGenerator__container button {
-    width: 300px;
-    padding: 10px;
-    font-size: 2rem;
-    border-radius: 5px;
-    border: none;
-    font-family: 'Asap', sans-serif;
-    cursor: pointer;
-    transition: all 0.2s;
-    margin-top: 5vh;
-    outline: none;
-}
-
-.leadGenerator__container button:hover {
-    background-color: #ccc
-}
-
-.leadGenerator__container button:active {
-    transform: scale(0.95);
+.leadGenerator__video {
+    margin-top: 30px;
 }
 
 @media (max-width: 500px) {

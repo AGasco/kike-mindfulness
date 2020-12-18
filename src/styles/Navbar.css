@@ -20,33 +20,57 @@
 .navbar>nav {
     flex: 1.5;
     display: flex;
-    justify-content: center;
-    padding-right: 20%;
-    align-items: center;
+    justify-content: space-between;
+    align-items: flex-end !important;
     position: relative;
 }
 
-.navbar>nav>ul {
+.navbar__left {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar__right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar__phoneContainer {
+    display: flex;
+    align-items: center;
+    padding-top: 5%;
+}
+
+.navbar__list {
     font-family: 'Asap', sans-serif;
     font-size: 1.2rem;
     list-style-type: none;
     display: flex;
+    padding-left: 10vw;
 }
 
-.navbar>nav>ul>li {
+.navbar__li {
     padding: 5px 20px;
 }
 
-.navbar>nav>ul>li>a {
+.navbar__li>a {
+    font-size: 1.5rem;
     color: #202020;
     text-decoration: none;
     cursor: pointer;
 }
 
+.navbar__phone {
+    font-family: "Asap", sans-serif;
+    font-size: 1.5rem;
+    padding: 5px 20px 5px 7px;
+}
+
 .navbar__cta {
-    position: absolute;
+    /* position: absolute;
     right: 0;
-    top: -32px;
+    top: -28px; */
 }
 
 .navbar__cta>button {
@@ -60,6 +84,12 @@
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     cursor: pointer;
+    transition: all 0.3s;
+}
+
+.navbar__cta>button:hover {
+    color: #202020;
+    background-color: goldenrod;
 }
 
 @media (max-width: 1550px) {
@@ -69,7 +99,7 @@
 }
 
 @media (max-width: 1250px) {
-    .navbar>nav>ul>li {
+    .navbar__li {
         padding: 5px 10px;
     }
     .navbar__cta {
@@ -81,7 +111,7 @@
 }
 
 @media (max-width: 1120px) {
-    .navbar>nav>ul {
+    .navbar__list {
         font-size: 1rem;
         padding-left: 10% !important;
     }
@@ -94,7 +124,7 @@
 }
 
 @media (max-width: 970px) {
-    .navbar>nav>ul {
+    .navbar__list {
         font-size: 1rem;
         padding-left: 3% !important;
     }
@@ -104,7 +134,7 @@
 }
 
 @media (max-width: 844px) {
-    .navbar>nav>ul {
+    .navbar__list {
         display: none;
     }
     .navbar__cta {

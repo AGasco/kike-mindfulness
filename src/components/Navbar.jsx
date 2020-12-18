@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { Link as RouterLink } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons/";
 import "./../styles/Navbar.css";
 
 class Navbar extends Component {
@@ -13,31 +15,35 @@ class Navbar extends Component {
 
         {!this.props.hidden && (
           <nav>
-            <ul>
-              <li>
-                <ScrollLink to="quienSoy" smooth={true} duration={600}>
-                  ¿QUIÉN SOY?
-                </ScrollLink>
-              </li>
-              <li>
-                <ScrollLink to="programas" smooth={true} duration={800}>
-                  PROGRAMAS
-                </ScrollLink>
-              </li>
-              <li>
-                <ScrollLink to="contacto" smooth={true} duration={1000}>
-                  CONTÁCTAME
-                </ScrollLink>
-              </li>
-            </ul>
-            <ScrollLink
-              className="navbar__cta"
-              to="programas"
-              smooth={true}
-              duration={800}
-            >
-              <button>RESERVA AHORA</button>
-            </ScrollLink>
+            <div className="navbar__left">
+              <ul className="navbar__list">
+                <li className="navbar__li">
+                  <ScrollLink to="programas" smooth={true} duration={800}>
+                    PROGRAMAS
+                  </ScrollLink>
+                </li>
+                <li className="navbar__li">
+                  <ScrollLink to="contacto" smooth={true} duration={1000}>
+                    CONTÁCTAME
+                  </ScrollLink>
+                </li>
+              </ul>
+            </div>
+            <div className="navbar__right">
+              <div className="navbar__phoneContainer">
+                <FontAwesomeIcon icon={faWhatsapp} />
+                <p className="navbar__phone">620 648 806</p>
+              </div>
+
+              <ScrollLink
+                className="navbar__cta"
+                to="programas"
+                smooth={true}
+                duration={800}
+              >
+                <button>¡ RESERVA AHORA !</button>
+              </ScrollLink>
+            </div>
           </nav>
         )}
       </div>

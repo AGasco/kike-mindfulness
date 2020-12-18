@@ -55,7 +55,6 @@ class Contacto extends Component {
     );
 
     this.setState({ submitted: true });
-    console.log("submitted");
   };
 
   render() {
@@ -69,6 +68,9 @@ class Contacto extends Component {
             <em>
               <p className="contacto__subtitle">
                 Ponte en contacto conmigo y te responderé lo antes posible :)
+              </p>
+              <p className="contacto__subtitle">
+                O si lo prefieres, llámame directamente al 620 648 806
               </p>
             </em>
             <form onSubmit={this.handleSubmit}>
@@ -124,7 +126,9 @@ class Contacto extends Component {
                 </select>
               </div>
               <div className="contacto__formElem">
-                <label htmlFor="comments">Cuéntame lo que quieras</label>
+                <label htmlFor="comments">
+                  Cuéntame lo que quieras sobre ti
+                </label>
                 <textarea
                   name="comments"
                   id=""
@@ -139,7 +143,7 @@ class Contacto extends Component {
                 <input
                   className="contacto__submit"
                   type="submit"
-                  value="¡Empieza tu viaje de autoconocimiento!"
+                  value="¡Empieza tu aventura de autoconocimiento!"
                 />
               </div>
             </form>

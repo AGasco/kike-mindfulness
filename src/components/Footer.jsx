@@ -4,7 +4,9 @@ import {
   faInstagram,
   faFacebookSquare,
   faYoutube,
+  faInstagramSquare,
 } from "@fortawesome/free-brands-svg-icons/";
+import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons/";
 import { Link as ScrollLink } from "react-scroll";
 import logo from "./../imgs/logo.png";
 import "./../styles/Footer.css";
@@ -19,11 +21,7 @@ function Footer() {
       </div>
       <div className="footer__center">
         <div className="footer__quote">
-          <em>
-            "Cada mañana nacemos de nuevo. Lo que hacemos hoy es lo que más
-            importa" -
-          </em>{" "}
-          Siddhartha 'Buddha' Gautama
+          <em>"El dolor es inevitable, el sufrimiento es opcional" -</em> Buddha
         </div>
 
         <p className="footer__socialMediaTitle">
@@ -31,16 +29,24 @@ function Footer() {
         </p>
 
         <div className="footer__socialMedia">
-          <a href="https://google.com" target="_blank" rel="noreferrer">
+          <a
+            href="https://www.instagram.com/kikemindfulness/?hl=es"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FontAwesomeIcon icon={faInstagram} />
           </a>
-          <a href="https://google.com" target="_blank" rel="noreferrer">
+          <a
+            href="https://www.facebook.com/kikemindfulness-114745383634570/?ref=py_c&__xts__"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FontAwesomeIcon icon={faFacebookSquare} />
           </a>
-
+          {/* 
           <a href="https://google.com" target="_blank" rel="noreferrer">
             <FontAwesomeIcon icon={faYoutube} />
-          </a>
+          </a> */}
         </div>
       </div>
       <div className="footer__right">
@@ -62,6 +68,16 @@ function Footer() {
               </ScrollLink>
             </li>
           </ul>
+        </div>
+        <div className="footer__contactContainer">
+          <div className="footer__contact">
+            <FontAwesomeIcon icon={faEnvelope} />
+            <p>kikemindfulness@gmail.com</p>
+          </div>
+          <div className="footer__contact">
+            <FontAwesomeIcon icon={faPhone} />
+            <p>620 648 806</p>
+          </div>
         </div>
       </div>
     </div>
