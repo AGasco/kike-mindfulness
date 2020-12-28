@@ -15,6 +15,7 @@
 }
 
 .app__allContainer {
+    width: 100%;
     height: max-content;
 }
 
