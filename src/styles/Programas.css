@@ -1,10 +1,13 @@
 .programas {
-    height: 100%;
+    height: max-content;
+    min-height: max-content;
     background-color: white;
     padding-top: 50px;
 }
 
 .programas__container {
+    height: max-content;
+    min-height: max-content !important;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,14 +23,18 @@
 .programas__subtitle {
     font-family: "Darker Grotesque", sans-serif;
     font-size: 1.5rem;
+    text-align: center;
 }
 
 .programas__list {
+    width: 60%;
+    height: max-content;
     padding-left: 0;
     list-style-type: none;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 @media (max-width: 1120px) {
