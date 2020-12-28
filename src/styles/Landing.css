@@ -138,7 +138,7 @@
     }
 }
 
-@media (max-width: 280px) {
+@media (max-width: 300px) {
     .landing__claim {
         font-size: 2rem;
     }

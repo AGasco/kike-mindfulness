@@ -62,3 +62,10 @@
         width: 80%;
     }
 }
+
+@media (max-width: 350px) {
+    .quienSoy__video {
+        width: 256px !important;
+        height: 144px !important;
+    }
+}
