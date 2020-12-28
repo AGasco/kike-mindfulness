@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Asap&family=Darker+Grotesque:wght@300;400&family=Wire+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Anton&family=Asap&family=Darker+Grotesque:wght@300;400&family=Wire+One&display=swap');
 *, *::before, *::after {
   margin: 0;
   padding: 0;
@@ -6,6 +6,7 @@
 }
 
 html {
+  font-size: 100% !important;
   width: 100vw !important;
 }
 

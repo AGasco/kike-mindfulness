@@ -137,4 +137,8 @@
     .footer {
         padding: 0 20px !important;
     }
+    /* REMOVE THIS */
+    .footer__contactContainer {
+        display: none;
+    }
 }

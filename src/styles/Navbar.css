@@ -15,6 +15,11 @@
     color: #202020;
     text-decoration: none;
     white-space: nowrap;
+    transition: all 0.3s;
+}
+
+.navbar__icon>a:hover {
+    color: goldenrod;
 }
 
 .navbar>nav {
@@ -88,7 +93,7 @@
 }
 
 .navbar__cta>button:hover {
-    color: #202020;
+    /* color: #202020; */
     background-color: goldenrod;
 }
 
@@ -197,6 +202,17 @@
 @media (max-width: 325px) {
     .navbar__icon>a {
         font-size: 0.9rem;
+    }
+    .navbar__cta>button {
+        font-size: 0.7rem;
+    }
+}
+
+/* GALAXY FOLD */
+
+@media (max-width: 280px) {
+    .navbar__icon>a {
+        font-size: 0.8rem;
     }
     .navbar__cta>button {
         font-size: 0.7rem;
