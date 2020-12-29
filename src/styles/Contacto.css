@@ -95,6 +95,7 @@
     font-family: "Darker Grotesque", sans-serif;
     font-size: 2.5rem;
     padding-bottom: 30px;
+    text-align: center;
 }
 
 .contacto__graciasContainer {
@@ -123,8 +124,14 @@
 }
 
 .contacto__volver>button:hover {
-    color: white;
-    box-shadow: 2px 2px 5px rgba(255, 239, 158, 0.8), -2px -2px 5px rgba(255, 239, 158, 0.8);
+    color: #202020;
+    background-color: goldenrod;
+}
+
+@media (max-width: 1700px) {
+    .contacto__formElem>input, .contacto__formElem>select, .contacto__formElem>textarea {
+        padding: 5px;
+    }
 }
 
 @media (max-width: 1270px) {
@@ -133,13 +140,65 @@
     }
 }
 
-@media (max-width: 980px) {
+@media (max-width: 1050px) {
     .contacto__submit {
         font-size: 2.5rem !important;
     }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 900px) {
+    .contacto__submit {
+        font-size: 2rem !important;
+    }
+    .contacto form {
+        font-size: 1.8rem;
+    }
+    .contacto__subtitle {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 550px) {
+    .contacto form {
+        font-size: 1.6rem;
+    }
+    .contacto__subtitle {
+        font-size: 1.1rem;
+    }
+    .contacto__formElem>input, .contacto__formElem>select, .contacto__formElem>textarea {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 440px) {
+    .contacto form {
+        font-size: 1.4rem;
+        min-width: 375px;
+    }
+    .contacto__subtitle {
+        font-size: 1rem;
+    }
+    .contacto__submit {
+        font-size: 2rem !important;
+    }
+}
+
+@media (max-width: 400px) {
+    .contacto form {
+        min-width: 350px;
+    }
+    .contacto__subtitle {
+        font-size: 0.9rem;
+    }
+    .contacto__submit {
+        font-size: 1.8rem !important;
+    }
+    .contacto__horizFormElem {
+        flex-direction: column;
+    }
+}
+
+/* @media (max-width: 450px) {
     .contacto {
         margin-bottom: 30vh !important;
     }
@@ -157,13 +216,22 @@
         padding: 5px;
         font-size: 1.7rem;
     }
-}
+} */
 
 @media (max-width: 350px) {
+    .contacto__subtitle {
+        font-size: 0.75rem;
+    }
     .contacto form {
         min-width: 290px;
     }
     .contacto__submit {
-        font-size: 1.5rem !important;
+        font-size: 1.4rem !important;
+    }
+}
+
+@media (max-width: 300px) {
+    .contacto__subtitle {
+        font-size: 0.65rem;
     }
 }

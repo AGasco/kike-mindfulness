@@ -281,7 +281,13 @@
     }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 434px) {
+    .landing__mainSide {
+        display: none;
+    }
+}
+
+/* @media (max-width: 425px) {
     .landing__mainSide {
         left: -31vw;
         bottom: 35vh;
@@ -307,10 +313,4 @@
         left: -36vw;
         bottom: 55vh;
     }
-}
-
-@media (max-width: 348px) {
-    .landing__mainSide {
-        display: none;
-    }
-}
+} */
