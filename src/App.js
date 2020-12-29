@@ -35,11 +35,7 @@ class App extends Component {
                 render={(props) => (
                   <React.Fragment>
                     <Navbar hidden />
-                    <Contacto
-                      programas={data.default}
-                      match={props.match}
-                      leadClicked={this.state.leadGeneratorClicked}
-                    />
+                    <Contacto programas={data.default} match={props.match} />
                   </React.Fragment>
                 )}
               />
