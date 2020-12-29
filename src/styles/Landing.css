@@ -304,12 +304,12 @@
 
 @media (max-width: 361px) {
     .landing__mainSide {
-        left: -37vw;
+        left: -36vw;
         bottom: 55vh;
     }
 }
 
-@media (max-width: 345px) {
+@media (max-width: 348px) {
     .landing__mainSide {
         display: none;
     }
