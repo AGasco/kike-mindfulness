@@ -1,9 +1,10 @@
 .leadGenerator {
     /* height: 100%; */
-    width: 100vw !important;
+    /* width: 100vw !important; */
     padding-top: 100px;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .leadGenerator__container {
@@ -88,7 +89,7 @@
         font-size: 0.9rem;
     }
     .leadGenerator__video {
-        width: 230px !important;
-        height: 129px !important;
+        width: 215px !important;
+        height: 120px !important;
     }
 }

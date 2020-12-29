@@ -34,6 +34,7 @@
     font-family: "Darker Grotesque", sans-serif;
     padding: 20px;
     font-size: 1.2rem;
+    text-align: center;
 }
 
 .footer__center>p {
@@ -105,17 +106,57 @@
 }
 
 @media (max-width: 1260px) {
-    .footer__nav>ul {
-        flex-direction: column;
-    }
     .footer__nav>ul>li {
+        font-size: 0.9rem;
+        white-space: nowrap;
         padding: 15px;
+    }
+    .footer__quote {
+        font-size: 1.1rem;
+        padding: 10px;
+    }
+    .footer__logo {
+        margin: 0 !important;
     }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 950px) {
+    .footer__quote {
+        font-size: 1rem;
+    }
+    .footer__nav>ul>li {
+        font-size: 0.8rem;
+        white-space: nowrap;
+        padding: 5px;
+    }
+    .footer__socialMediaTitle {
+        font-size: 1rem !important;
+    }
+}
+
+@media (max-width: 720px) {
     .footer__quote {
         display: none;
+    }
+    .footer__nav>ul>li {
+        font-size: 0.8rem;
+        white-space: nowrap;
+        padding: 5px;
+    }
+    .footer__socialMediaTitle {
+        font-size: 1rem !important;
+    }
+}
+
+@media (max-width: 680px) {
+    .footer__socialMediaTitle {
+        display: none;
+    }
+    .footer__socialMedia {
+        flex-direction: column;
+    }
+    .footer__socialMedia .svg-inline--fa {
+        margin-bottom: 10px;
     }
 }
 
@@ -137,8 +178,50 @@
     .footer {
         padding: 0 20px !important;
     }
-    /* REMOVE THIS */
-    .footer__contactContainer {
-        display: none;
+}
+
+@media (max-width: 480px) {
+    .footer__logo {
+        width: 80px;
+    }
+    .footer__socialMedia .svg-inline--fa {
+        font-size: 1.5rem;
+        margin-bottom: 0 !important;
+    }
+    .footer__nav>ul>li {
+        font-size: 0.7rem;
+    }
+    .footer__right {
+        padding-left: 30px;
+        font-size: 0.8rem;
+    }
+    .footer__contact {
+        padding: 0;
+    }
+}
+
+@media (max-width: 400px) {
+    .footer__nav>ul>li {
+        padding: 0;
+        margin: 5px;
+        font-size: 0.6rem;
+    }
+    .footer__contact {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 350px) {
+    .footer__logo {
+        width: 60px;
+    }
+    .footer__right {
+        padding: 0;
+    }
+    .footer__nav>ul>li {
+        font-size: 0.5rem;
+    }
+    .footer__contact {
+        font-size: 0.6rem;
     }
 }

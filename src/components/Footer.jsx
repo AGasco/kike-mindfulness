@@ -3,8 +3,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faInstagram,
   faFacebookSquare,
-  faYoutube,
-  faInstagramSquare,
 } from "@fortawesome/free-brands-svg-icons/";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons/";
 import { Link as ScrollLink } from "react-scroll";
@@ -43,10 +41,6 @@ function Footer() {
           >
             <FontAwesomeIcon icon={faFacebookSquare} />
           </a>
-          {/* 
-          <a href="https://google.com" target="_blank" rel="noreferrer">
-            <FontAwesomeIcon icon={faYoutube} />
-          </a> */}
         </div>
       </div>
       <div className="footer__right">
