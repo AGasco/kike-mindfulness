@@ -38,4 +38,64 @@
 .testimonios__quote {
     font-family: "Wire One", sans-serif;
     font-size: 2.3rem;
+    padding-right:
+}
+
+@media (max-width: 1325px) {
+    .testimonios__quote {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 1230px) {
+    .testimonios__name {
+        font-size: 1.8rem;
+    }
+    .testimonios__quote {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 1030px) {
+    .testimonios__personData {
+        margin-left: 20px;
+        padding-right: 10px;
+    }
+    .testimonios__name {
+        font-size: 1.7rem;
+    }
+    .testimonios__quote {
+        font-size: 1.7rem;
+    }
+}
+
+@media (max-width: 967px) {
+    .testimonios__testimonio {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* padding-bottom: 20px; */
+    }
+    .testimonios__video {
+        padding-top: 20px;
+    }
+    .testimonios__personData {
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width: 536px) {
+    .testimonios__video {
+        padding-top: 0;
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 380px) {
+    .testimonios__name {
+        font-size: 1.5rem;
+    }
+    .testimonios__quote {
+        font-size: 1.5rem;
+    }
 }
