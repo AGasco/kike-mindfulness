@@ -61,9 +61,11 @@
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 700px) {
     .programa {
-        width: 30vw;
+        font-size: 80%;
+        min-width: 200px;
+        margin: 0;
         margin-bottom: 50px;
     }
 }

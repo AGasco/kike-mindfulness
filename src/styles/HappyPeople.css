@@ -13,8 +13,17 @@
 
 .happyPeople__pic {
     object-fit: cover;
-    width: 20vw;
+    width: 300px;
     height: auto;
     margin: 10px;
     /* border-radius: 100vw; */
+}
+
+@media (max-width: 1050px) {
+    .happyPeople__top, .happyPeople__bottom {
+        flex-direction: column;
+    }
+    .happyPeople__pic {
+        width: 60vw !important;
+    }
 }

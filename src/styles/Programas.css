@@ -40,5 +40,6 @@
 @media (max-width: 1120px) {
     .programas__list {
         flex-direction: column;
+        width: max-content;
     }
 }
