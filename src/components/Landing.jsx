@@ -11,7 +11,7 @@ function Landing() {
         <h1>KIKE MINDFULNESS</h1>
         <div className="landing__claim">
           <h3>APRENDE A MEDITAR</h3>
-          <h6>Y RECUPERA TU SENSACIÓN DE BIENESTAR</h6>
+          <h6>RECUPERA TU SENSACIÓN DE PAZ Y BIENESTAR</h6>
         </div>
       </div>
     </div>

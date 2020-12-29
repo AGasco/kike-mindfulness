@@ -25,7 +25,7 @@
 
 .landing__claim {
     font-family: 'Amatic SC', cursive;
-    font-size: 6rem;
+    font-size: 5.5rem;
     color: white;
     /* left: 12%;
     top: 37.5%; */
@@ -44,6 +44,7 @@
 
 .landing__claim>h3 {
     line-height: 5rem;
+    text-align: center;
 }
 
 .landing__mainSide {
@@ -63,7 +64,7 @@
     }
 }
 
-@media (max-width: 1700px) {
+@media (max-width: 1750px) {
     .landing__claim {
         font-size: 5rem;
     }
@@ -74,7 +75,7 @@
     }
 }
 
-@media (max-width: 1550px) {
+@media (max-width: 1650px) {
     .landing__claim {
         font-size: 4rem;
     }
@@ -88,7 +89,7 @@
     }
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1380px) {
     .landing__claim {
         font-size: 3.5rem;
     }
@@ -97,7 +98,7 @@
     }
 }
 
-@media (max-width: 1150px) {
+@media (max-width: 1250px) {
     .landing__claim {
         font-size: 3rem;
         padding: 5px 30px 5px 10px;
@@ -108,7 +109,7 @@
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
     .landing {
         background-position: center;
     }
