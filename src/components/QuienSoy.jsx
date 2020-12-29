@@ -1,6 +1,6 @@
 import React from "react";
 import ReactPlayer from "react-player/youtube";
-import Thumbnail from "./../imgs/landing2.jpg";
+import Thumbnail from "./../imgs/quienSoy.jpg";
 import "./../styles/reactPlayer.css";
 import "./../styles/QuienSoy.css";
 
