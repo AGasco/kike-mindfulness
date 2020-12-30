@@ -1,9 +1,9 @@
 import React from "react";
 import ReactPlayer from "react-player/youtube";
-import FotoDaniel from "./../imgs/testimonio_daniel.png";
+import FotoDaniel from "./../imgs/testimonio_daniel.jpg";
 import VideoDaniel from "./../videos/testimonio_daniel.mp4";
-import FotoDaura from "./../imgs/testimonio_daura2.PNG";
-import FotoInes from "./../imgs/testimonio_ines.PNG";
+import FotoDaura from "./../imgs/testimonio_daura.jpg";
+import FotoInes from "./../imgs/testimonio_ines.jpg";
 import "./../styles/reactPlayer.css";
 import "./../styles/Testimonios.css";
 

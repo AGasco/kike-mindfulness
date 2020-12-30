@@ -27,6 +27,9 @@
 
 .programaPage__buttons>* {
     flex: 1;
+}
+
+.programaPage__backBtn, .programaPage__confirmBtn {
     margin: 0 5px;
     padding: 20px;
     font-size: 1.5rem;
@@ -43,6 +46,7 @@
 }
 
 .programaPage__backBtn {
+    padding: 0;
     background-color: #c44d4d;
 }
 

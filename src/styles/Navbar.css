@@ -1,8 +1,18 @@
 .navbar {
+    margin-bottom: 0 !important;
+}
+
+.navbar>div {
     display: flex;
     align-items: flex-end;
     justify-content: flex-start;
-    margin-bottom: 0 !important;
+}
+
+.navbar__logo {
+    position: absolute;
+    width: 166px;
+    color: inherit;
+    transition: all 0.23;
 }
 
 .navbar__icon {
@@ -22,7 +32,11 @@
     color: goldenrod;
 }
 
-.navbar>nav {
+.navbar__icon.hidden>a:hover {
+    filter: invert(66%) sepia(84%) saturate(465%) hue-rotate(357deg) brightness(91%) contrast(87%);
+}
+
+.navbar nav {
     flex: 1.5;
     display: flex;
     justify-content: space-between;
@@ -98,7 +112,7 @@
 }
 
 @media (max-width: 1500px) {
-    .navbar>nav {
+    .navbar nav {
         justify-content: flex-start;
     }
     .navbar__list {

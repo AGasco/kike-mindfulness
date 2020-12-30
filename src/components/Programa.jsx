@@ -9,9 +9,11 @@ function Programa({ title, title2, picture, description, url }) {
       <h3 className="programa__title">{title}</h3>
       <h3 className="programa__title">{title2}</h3>
       <p className="programa__description">{description}</p>
-      <button className="programa__button">
-        <Link to={url}>Más Información</Link>
-      </button>
+
+      <Link to={url} className="programa__link">
+        {" "}
+        <button className="programa__button">Más Información </button>
+      </Link>
     </div>
   );
 }

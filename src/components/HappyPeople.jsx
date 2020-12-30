@@ -3,7 +3,7 @@ import Happy1 from "./../imgs/happy_1.jpg";
 import Happy2 from "./../imgs/happy_2.JPG";
 import Happy3 from "./../imgs/happy_3.jpg";
 import Happy4 from "./../imgs/happy_4.JPG";
-import Happy5 from "./../imgs/happy_5.png";
+import Happy5 from "./../imgs/happy_5.jpg";
 import Happy6 from "./../imgs/happy_6.jpg";
 import "./../styles/HappyPeople.css";
 

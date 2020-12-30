@@ -41,9 +41,14 @@ class ProgramaPage extends Component {
           >
             Volver a Programas
           </button>
-          <button className="programaPage__confirmBtn">
-            <Link to={`/contacto/${programa.id}`}> ¡ Estoy interesado !</Link>
-          </button>
+          <Link
+            to={`/contacto/${programa.id}`}
+            className="programaPage__confirmLink"
+          >
+            <button className="programaPage__confirmBtn">
+              ¡ Estoy interesado !
+            </button>
+          </Link>
         </div>
       </div>
     );
