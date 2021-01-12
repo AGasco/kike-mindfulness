@@ -24,7 +24,7 @@ class LeadGenerator extends Component {
             controls={true}
             playing={true}
             light={Thumbnail}
-            url="https://www.youtube.com/watch?v=ltmO9XQVdSg"
+            url="https://youtu.be/VsrlD_1hwlg"
           />
         </div>
       </div>

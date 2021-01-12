@@ -19,7 +19,9 @@ function Footer() {
       </div>
       <div className="footer__center">
         <div className="footer__quote">
-          <em>"El dolor es inevitable, el sufrimiento es opcional" -</em> Buddha
+          <em>
+            "La calidad de tus pensamientos determinan la calidad de tu vida"
+          </em>
         </div>
 
         <p className="footer__socialMediaTitle">

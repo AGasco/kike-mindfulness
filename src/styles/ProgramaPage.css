@@ -1,65 +1,103 @@
 .programaPage {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 60vw;
-    max-width: 400px;
-    margin: auto auto;
-    padding-top: 100px;
-    text-align: justify;
+  display: flex;
+  width: 100vw;
+  height: 90vh;
+  margin: auto auto;
+  text-align: justify;
+  display: flex;
+}
+
+.programaPage__left {
+  flex: 0.25;
+}
+.programaPage__right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.programaPage__container {
+  padding: 50px 50px 0 50px;
+  flex: 1;
 }
 
 .programaPage__title {
-    font-family: "anton", sans-serif;
-    padding: 20px;
+  font-family: "anton", sans-serif;
+  padding: 20px;
+  text-align: center;
+  font-size: 2.5rem;
 }
 
 .programaPage__subtitle {
-    font-family: "Asap", sans-serif;
-    padding-bottom: 30px;
+  font-family: "Asap", sans-serif;
+  padding-bottom: 30px;
+}
+
+.programaPage__video {
+  margin-bottom: 20vh;
 }
 
 .programaPage__buttons {
-    padding: 50px 0;
-    display: flex;
-    width: 100%;
+  padding: 50px 0 0 0;
+  display: flex;
+  width: 90%;
+  margin: auto auto;
 }
 
-.programaPage__buttons>* {
-    flex: 1;
+.programaPage__buttons > * {
+  flex: 1;
 }
 
-.programaPage__backBtn, .programaPage__confirmBtn {
-    margin: 0 5px;
-    padding: 20px;
-    font-size: 1.5rem;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    color: white;
-    transition: all 0.3s;
+.programaPage__backBtn,
+.programaPage__confirmBtn {
+  width: 100%;
+  margin: 0 5px;
+  padding: 20px;
+  font-size: 1.5rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+  transition: all 0.3s;
 }
 
-.programaPage__buttons>*>a {
-    text-decoration: none;
-    color: inherit;
+.programaPage__buttons > * > a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .programaPage__backBtn {
-    padding: 0;
-    background-color: #c44d4d;
+  cursor: pointer;
+  padding: 10px 20px;
+  color: #ccc;
+  background-color: #202020;
+  border: none;
+  outline: none;
+  font-size: 3rem;
+  transition: all 0.4s;
+  font-family: "Wire One", sans-serif;
 }
 
 .programaPage__backBtn:hover {
-    box-shadow: -5px 5px 5px rgba(196, 77, 77, 0.6);
-    background-color: #e36f6f;
+  color: white;
+  box-shadow: -5px 5px 5px rgba(196, 77, 77, 0.6);
+  background-color: #e36f6f;
 }
 
 .programaPage__confirmBtn {
-    background-color: #369636
+  cursor: pointer;
+  padding: 10px 20px;
+  color: white;
+  background-color: #202020;
+  border: none;
+  outline: none;
+  font-size: 3rem;
+  transition: all 0.4s;
+  font-family: "Wire One", sans-serif;
 }
 
 .programaPage__confirmBtn:hover {
-    box-shadow: 5px 5px 5px rgba(54, 150, 54, 0.6);
-    background-color: #4bb34b;
+  color: white;
+  box-shadow: 5px 5px 5px rgba(54, 150, 54, 0.6);
+  background-color: #4bb34b;
 }
