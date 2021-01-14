@@ -8,7 +8,7 @@
 }
 
 .programaPage__left {
-  flex: 0.25;
+  flex: 0.3;
 }
 .programaPage__right {
   flex: 1;
@@ -17,8 +17,9 @@
 }
 
 .programaPage__container {
-  padding: 50px 50px 0 50px;
-  flex: 1;
+  padding: 50px 100px 0 75px;
+  margin-right: 50px;
+  flex: 0.8;
 }
 
 .programaPage__title {
@@ -38,10 +39,11 @@
 }
 
 .programaPage__buttons {
+  width: 100% !important;
   padding: 50px 0 0 0;
   display: flex;
-  width: 90%;
-  margin: auto auto;
+  justify-content: center;
+  align-items: center;
 }
 
 .programaPage__buttons > * {
@@ -50,16 +52,13 @@
 
 .programaPage__backBtn,
 .programaPage__confirmBtn {
-  width: 100%;
+  /* width: 400px !important; */
   margin: 0 5px;
-  padding: 20px;
-  font-size: 1.5rem;
-  outline: none;
-  border: none;
-  cursor: pointer;
-  color: white;
-  transition: all 0.3s;
 }
+
+/* .programaPage__confirmLink {
+  width: 400px !important;
+} */
 
 .programaPage__buttons > * > a {
   text-decoration: none;
@@ -67,6 +66,7 @@
 }
 
 .programaPage__backBtn {
+  width: 300px;
   cursor: pointer;
   padding: 10px 20px;
   color: #ccc;
@@ -85,6 +85,7 @@
 }
 
 .programaPage__confirmBtn {
+  width: 320px;
   cursor: pointer;
   padding: 10px 20px;
   color: white;
