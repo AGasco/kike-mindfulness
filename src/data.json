@@ -2,8 +2,6 @@
   {
     "id": "programa-de-8-semanas",
     "title": "Programa de 8 semanas",
-    "title2": "",
-    "subtitle": "subtitle",
     "description": "Embárcate en una aventura de autoconocimiento de 8 semanas donde obtendrás las herramientas necesarias para aprender a gestionar tu mundo interior.",
     "pageDescription": "¿Estás cansado de vivir con estrés y ansiedad? Seguro que en tu interior hay algo que te dice que una vida con más paz y bienestar es posible. Este es un <b>programa de 8 semanas</b> super completo donde conseguirás las herramientas, la metodología y la motivación necesaria para aprender a gestionar tu mundo interior. <b>Aprenderás a gestionar tus pensamientos y autorregular tus emociones</b> para poco a poco reducir tu sufrimiento.<br/> <br/>Nos reuniremos <b>una vez por semana para sesiones de 2 horas y media</b>. Practicaremos meditaciones guiadas e impartiremos teoría de forma muy entretenida y experiencial. Recibirás un manual de tareas y un paquete de audios con meditaciones guiadas para practicar en casa. Finalizaremos el programa con un retiro de meditación de 1 día donde acabaremos de integrar todo lo aprendido. Formar parte de un grupo te ayudará a darte cuenta como la mente humana funciona de forma similar en todos nosotros, de que todos tenemos pensamientos y emociones aflictivas que muchas veces hacen que nos sintamos desamparados.<br/><br/>Precio del programa: 275€<br/><br/>El próximo programa comienza el xxx. Los grupos son reducidos ¡Reserva ahora para asegurarte una plaza!",
     "picture": "https://images.unsplash.com/photo-1593811167562-9cef47bfc4d7?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1352&q=80",
@@ -13,11 +11,10 @@
   {
     "id": "programa-intensivo-de-4-semanas",
     "title": "Programa intensivo de 4 semanas",
-    "title2": "",
-    "subtitle": "subtitle",
     "description": "Obtén los beneficios del programa de 8 semanas en un formato intensivo. Ideal para personas muy ocupadas.",
-    "pageDescription": "pageDescription",
+    "pageDescription": "Este es un programa en <b>formato intensivo de 4 semanas</b>. En él recibirás las mismas herramientas que en el programa de 8 semanas pero en la mitad de tiempo, recomendado para personas muy ocupadas. Aprenderás a tomar conciencia de tus pensamientos y emociones para trabajar con ellos y recuperar tu sensación de paz y bienestar.<br/><br/> Al ser intensivo nos reuniremos <b>una vez por semana para sesiones de 4 horas</b>. ¡Parece mucho pero te aseguro que se nos pasan volando! Practicaremos meditaciones guiadas e impartiremos teoría de forma muy amena y experiencial. Recibirás un manual de tareas y un paquete de audios con meditaciones guiadas para practicar en casa. Finalizaremos el programa con un retiro de un día en la naturaleza donde acabaremos de integrar todo lo aprendido. Si no dispones de 8 semanas este programa es perfecto para tí.<br/><br/> Precio del programa: 270€ <br/><br/>El próximo programa comienza el xxx. Los grupos son reducidos ¡Reserva ahora para no quedarte sin tu plaza!",
     "picture": "https://images.unsplash.com/photo-1597307510159-96bbe9b2a330?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1380&q=80",
+    "pagePicture": "/imgs/happy_2.JPG",
     "url": "/programas/programa-intensivo-de-4-semanas"
   },
   {
@@ -26,8 +23,9 @@
     "title2": "por video-conferencia",
     "subtitle": "subtitle",
     "description": "Sesiones personalizadas. Obtén los beneficios del mindfulness desde la comodidad de tu hogar y con flexibilidad de horarios.",
-    "pageDescription": "pageDescription",
+    "pageDescription": "En estas sesiones recibirás los beneficios del programa de 8 semanas <b>desde la comodidad de tu hogar</b> y con flexibilidad de horarios. Aprenderás a darte cuenta de lo que sucede en tu mundo interior y a gestionarlo para reducir estrés, ansiedad y recuperar tu equilibrio emocional.<br/><br/> Al ser tú y yo solos podemos decidir reunirnos una vez por semana o cada dos semanas en el horario que mejor nos venga a los dos. Tendremos sesiones de 1 hora y cuarto donde practicaremos meditaciones guiadas e impartiremos teoría de manera muy amena y experiencial. Te enviaré por correo meditaciones guiadas para practicar en casa y lecturas para acabar de integrar lo que aprendamos en cada sesión. Este formato es perfecto para tí si tus horarios cambian de semana a semana o si simplemente prefieres aprender cómodamente desde casa.<br/><br/> Precio por sesión: 30€<br/><br/> ¡Reserva ahora y recupera tu sensación de paz y bienestar!",
     "picture": "https://images.unsplash.com/photo-1532798442725-41036acc7489?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80",
+    "pagePicture": "/imgs/happy_5.JPG",
     "url": "/programas/sesiones-individuales"
   },
   {
@@ -36,8 +34,9 @@
     "title2": "",
     "subtitle": "subtitle",
     "description": "Retiros de 1 día en la naturaleza donde practicamos meditación y silencio",
-    "pageDescription": "pageDescription",
+    "pageDescription": "En estos retiros podrás disfrutar de la <b>meditación y del silencio en la naturaleza</b>. Tanto si estás empezando como si llevas años meditando este retiro te ayudará a profundizar en tu práctica meditativa.<br/><br/> Habrá un equilibrio entre meditaciones guiadas, meditaciones en silencio, movimientos conscientes, mindfull eating (comida consciente) y meditación caminando. Se servirá un almuerzo vegetariano que comeremos de manera consciente. El retiro comienza a las 11:00 y finaliza a las 17:00.<br/><br/> Precio del retiro: 40€ <br/><br/> El próximo retiro se celebrará el día xxxx. Las plazas son limitadas ¡Reserva ahora para no quedarte sin la tuya!",
     "picture": "https://images.unsplash.com/photo-1577253313708-cab167d2c474?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1322&q=80",
+    "pagePicture": "https://images.unsplash.com/photo-1474418397713-7ede21d49118?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1336&q=80",
     "url": "/programas/retiros-de-meditacion"
   }
 ]

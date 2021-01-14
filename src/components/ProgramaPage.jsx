@@ -47,7 +47,7 @@ class ProgramaPage extends Component {
           </div>
         </div>
         <div className="programaPage__right">
-          {programa.video && (
+          {programa.video ? (
             <ReactPlayer
               className="programaPage__video"
               width={640}
@@ -55,7 +55,13 @@ class ProgramaPage extends Component {
               controls={true}
               url="https://www.youtube.com/watch?v=BdnBgG1IlZM&feature=emb_logo"
             />
-          )}
+          ) : programa.pagePicture ? (
+            <img
+              className="programaPage__picture"
+              src={programa.pagePicture}
+              alt="Participantes"
+            />
+          ) : null}
         </div>
       </div>
     );

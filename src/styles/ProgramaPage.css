@@ -16,6 +16,11 @@
   align-items: center;
 }
 
+.programaPage__picture {
+  width: 30vw;
+  padding-bottom: 20vh;
+}
+
 .programaPage__container {
   padding: 50px 100px 0 75px;
   margin-right: 50px;
