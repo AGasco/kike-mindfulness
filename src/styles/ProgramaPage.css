@@ -5,6 +5,8 @@
   margin: auto auto;
   text-align: justify;
   display: flex;
+  overflow: auto;
+  overflow-y: hidden;
 }
 
 .programaPage__left {
@@ -25,11 +27,17 @@
   padding: 50px 100px 0 75px;
   margin-right: 50px;
   flex: 0.8;
+  max-width: 35vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .programaPage__title {
+  /* width: 120%; */
   font-family: "anton", sans-serif;
   padding: 20px;
+  padding-top: 0;
   text-align: center;
   font-size: 2.5rem;
 }
@@ -44,11 +52,9 @@
 }
 
 .programaPage__buttons {
-  width: 100% !important;
+  width: max-content !important;
   padding: 50px 0 0 0;
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .programaPage__buttons > * {
@@ -71,14 +77,14 @@
 }
 
 .programaPage__backBtn {
-  width: 300px;
+  width: 240px;
   cursor: pointer;
   padding: 10px 20px;
   color: #ccc;
   background-color: #202020;
   border: none;
   outline: none;
-  font-size: 3rem;
+  font-size: 2.2rem;
   transition: all 0.4s;
   font-family: "Wire One", sans-serif;
 }
@@ -90,14 +96,14 @@
 }
 
 .programaPage__confirmBtn {
-  width: 320px;
+  width: 240px;
   cursor: pointer;
   padding: 10px 20px;
   color: white;
   background-color: #202020;
   border: none;
   outline: none;
-  font-size: 3rem;
+  font-size: 2.2rem;
   transition: all 0.4s;
   font-family: "Wire One", sans-serif;
 }
@@ -106,4 +112,160 @@
   color: white;
   box-shadow: 5px 5px 5px rgba(54, 150, 54, 0.6);
   background-color: #4bb34b;
+}
+
+/* Media queries */
+@media (max-width: 1400px) {
+  .programaPage__container {
+    padding: 0px 50px 0 50px;
+    margin-right: 50px;
+    flex: 0.8;
+    max-width: 35vw;
+  }
+
+  .programaPage__video {
+    width: 480px !important;
+    height: 270px !important;
+  }
+
+  .programaPage__title {
+    font-size: 2rem;
+    white-space: nowrap;
+  }
+
+  .programaPage__description {
+    font-size: 0.9rem;
+  }
+
+  .programaPage__buttons * {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 1325px) {
+  .programaPage__container {
+    max-width: 40vw;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 1160px) {
+  .programaPage__container {
+    max-width: 50vw;
+  }
+  .programaPage__description {
+    font-size: 1rem;
+  }
+  .programaPage__video {
+    width: 360px !important;
+    height: 202.5px !important;
+    margin-bottom: 40vh;
+  }
+
+  .programaPage__right {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .programaPage__container {
+    max-width: 60vw;
+  }
+
+  .programaPage__left {
+    flex: 0.2;
+  }
+
+  .navbar__logo {
+    width: 133px;
+  }
+}
+
+@media (max-width: 600px) {
+  .programaPage__container {
+    max-width: 70vw;
+  }
+  .programaPage__buttons * {
+    font-size: 1.9rem;
+  }
+  .programaPage__backBtn,
+  .programaPage.confirmBtn {
+    width: 180px;
+  }
+
+  .programaPage__description {
+    font-size: 0.7rem;
+  }
+
+  .navbar__logo {
+    width: 96px;
+  }
+}
+
+@media (max-width: 450px) {
+  .navbar__logo {
+    width: 46px;
+    padding-left: 5px;
+  }
+  .programaPage__container {
+    padding: 0;
+  }
+
+  .programaPage__title {
+    font-size: 1.75rem;
+  }
+
+  .programaPage__left {
+    flex: 0.15;
+  }
+
+  .programaPage__backBtn,
+  .programaPage__confirmBtn {
+    width: 150px !important;
+  }
+
+  .programaPage__confirmBtn {
+    padding: 10px 0;
+  }
+  .programaPage__buttons * {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .programaPage__description {
+    font-size: 0.65rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .programaPage__description {
+    font-size: 0.6rem;
+  }
+  .navbar__logo {
+    display: none;
+  }
+  .programaPage__buttons * {
+    font-size: 1.2rem;
+  }
+  .programaPage__backBtn,
+  .programaPage__confirmBtn {
+    width: 125px !important;
+  }
+}
+
+@media (max-width: 280px) {
+  .programaPage {
+    justify-content: center;
+  }
+  .programaPage__title {
+    font-size: 1.5rem;
+  }
+  .programaPage__left {
+    display: none;
+  }
+  .programaPage__container {
+    max-width: 75vw;
+    padding-right: 10px;
+  }
 }

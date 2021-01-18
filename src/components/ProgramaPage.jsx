@@ -11,6 +11,7 @@ class ProgramaPage extends Component {
   };
 
   componentDidMount() {
+    window.scrollTo(0, 0);
     const programa = data.default.find(
       (p) => p.id === this.props.match.params.id
     );

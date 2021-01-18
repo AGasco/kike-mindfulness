@@ -13,6 +13,7 @@
   left: 2vw;
   top: 2vh;
   width: 166px;
+  padding-left: 10px;
   color: inherit;
   transition: all 0.23;
 }
