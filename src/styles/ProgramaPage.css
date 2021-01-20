@@ -7,6 +7,10 @@
   display: flex;
   overflow: auto;
   overflow-y: hidden;
+  max-width: 100vw;
+  position: absolute;
+  top: 5vh;
+  left: 0;
 }
 
 .programaPage__left {
@@ -156,15 +160,19 @@
   .programaPage__description {
     font-size: 1rem;
   }
+
+  .programaPage {
+    flex-direction: column;
+    overflow-y: visible;
+    align-items: center;
+  }
   .programaPage__video {
-    width: 360px !important;
-    height: 202.5px !important;
-    margin-bottom: 40vh;
+    margin-top: 10vh;
   }
 
-  .programaPage__right {
+  /* .programaPage__right {
     display: none;
-  }
+  } */
 }
 
 @media (max-width: 800px) {
@@ -188,9 +196,19 @@
   .programaPage__buttons * {
     font-size: 1.9rem;
   }
+
+  .programaPage {
+    overflow-x: hidden !important;
+  }
   .programaPage__backBtn,
   .programaPage.confirmBtn {
     width: 180px;
+  }
+
+  .programaPage__video {
+    margin-top: 10vh;
+    width: 360px !important;
+    height: 202px !important;
   }
 
   .programaPage__description {
@@ -203,9 +221,14 @@
 }
 
 @media (max-width: 450px) {
+  .programaPage__left {
+    display: none;
+  }
+
   .navbar__logo {
     width: 46px;
     padding-left: 5px;
+    display: none;
   }
   .programaPage__container {
     padding: 0;
@@ -236,14 +259,17 @@
   .programaPage__description {
     font-size: 0.65rem;
   }
+
+  .programaPage__video {
+    margin-top: 10vh;
+    width: 270px !important;
+    height: 151.5px !important;
+  }
 }
 
 @media (max-width: 320px) {
   .programaPage__description {
     font-size: 0.6rem;
-  }
-  .navbar__logo {
-    display: none;
   }
   .programaPage__buttons * {
     font-size: 1.2rem;
@@ -255,14 +281,13 @@
 }
 
 @media (max-width: 280px) {
-  .programaPage {
-    justify-content: center;
-  }
   .programaPage__title {
     font-size: 1.5rem;
   }
-  .programaPage__left {
-    display: none;
+  .programaPage__video {
+    margin-top: 10vh;
+    width: 216px !important;
+    height: 120px !important;
   }
   .programaPage__container {
     max-width: 75vw;
