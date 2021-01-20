@@ -199,6 +199,10 @@
     font-size: 1.9rem;
   }
 
+  .navbar__logo {
+    display: none;
+  }
+
   .programaPage {
     overflow-x: hidden !important;
   }
@@ -224,12 +228,6 @@
 
 @media (max-width: 450px) {
   .programaPage__left {
-    display: none;
-  }
-
-  .navbar__logo {
-    width: 46px;
-    padding-left: 5px;
     display: none;
   }
   .programaPage__container {
@@ -269,6 +267,9 @@
 }
 
 @media (max-width: 320px) {
+  .programaPage__title {
+    font-size: 1.33rem;
+  }
   .programaPage__description {
     font-size: 0.6rem;
   }
@@ -282,6 +283,9 @@
 }
 
 @media (max-width: 280px) {
+  .programaPage__title {
+    font-size: 1.1rem;
+  }
   .programaPage__video {
     margin-top: 10vh;
     width: 216px !important;
