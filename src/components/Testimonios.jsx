@@ -25,8 +25,8 @@ function Testimonios() {
         <div className="testimonios__personData">
           <h3 className="testimonios__name">Daura Cruz</h3>
           <em className="testimonios__quote">
-            " Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Consequuntur, hic"
+            "Gracias al curso, aprendí a gestionar mejor mis sentimientos, mis
+            impulsos y mis pensamientos"
           </em>
         </div>
       </div>
@@ -43,9 +43,8 @@ function Testimonios() {
         <div className="testimonios__personData">
           <h3 className="testimonios__name">Inés Nuez</h3>
           <em className="testimonios__quote">
-            "Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Blanditiis officiis itaque facilis sunt atque ipsa animi veritatis
-            est aspernatur rem"
+            "Gracias a la meditación, he aprendido a canalizar las experiencias
+            negativas"
           </em>
         </div>
       </div>
@@ -62,8 +61,8 @@ function Testimonios() {
         <div className="testimonios__personData">
           <h3 className="testimonios__name">Daniel García</h3>
           <em className="testimonios__quote">
-            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est quis
-            porro distinctio molestiae blanditiis nihil"
+            "Ahora tengo más consciencia de lo que ocurre dentro de mi cabeza,
+            he aprendido a aceptar cómo me siento"
           </em>
         </div>
       </div>
