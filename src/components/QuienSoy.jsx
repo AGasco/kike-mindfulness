@@ -10,8 +10,9 @@ function QuienSoy() {
       <div className="quienSoy__container">
         <h1 className="quienSoy__title">¿QUIÉN SOY?</h1>
         <p className="quienSoy__description">
-          ¡Hola, soy Kike! Ayudo a personas con estrés y ansiedad a entrenar su
-          mente para recuperar su sensación de paz y bienestar
+          ¡Hola, soy Kike! Soy de Las Palmas de Gran Canaria. Ayudo a personas
+          con estrés y ansiedad a entrenar su mente para recuperar su sensación
+          de paz y bienestar.
         </p>
         <ReactPlayer
           className="quienSoy__video"

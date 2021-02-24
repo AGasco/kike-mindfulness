@@ -4,6 +4,7 @@ import { Link as ScrollLink } from "react-scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons/";
 import Logo from "./../imgs/logo_black.png";
+import NavbarLogo from "./../imgs/logo_navbar.jpg";
 import "./../styles/Navbar.css";
 
 class Navbar extends Component {
@@ -21,7 +22,10 @@ class Navbar extends Component {
         ) : (
           <div>
             <h1 className="navbar__icon">
-              <RouterLink to="/">KIKE MINDFULNESS </RouterLink>
+              {/* <RouterLink to="/">KIKE MINDFULNESS </RouterLink> */}
+              <RouterLink to="/">
+                <img className="navbar__logo" src={NavbarLogo} alt="" />
+              </RouterLink>
             </h1>
             <nav>
               <div className="navbar__left">
@@ -37,13 +41,12 @@ class Navbar extends Component {
                     </ScrollLink>
                   </li>
                 </ul>
-              </div>
-              <div className="navbar__right">
                 <div className="navbar__phoneContainer">
                   <FontAwesomeIcon icon={faWhatsapp} />
                   <p className="navbar__phone">620 648 806</p>
                 </div>
-
+              </div>
+              <div className="navbar__right">
                 <ScrollLink
                   className="navbar__cta"
                   to="programas"

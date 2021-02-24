@@ -8,11 +8,24 @@
   justify-content: flex-start;
 }
 
-.navbar__logo {
+/* KIKEMINDFULNESS */
+/* .navbar__logo {
   position: absolute;
   left: 2vw;
   top: 2vh;
   width: 166px;
+  padding-left: 10px;
+  color: inherit;
+  transition: all 0.23;
+} */
+
+/* Logo KikeMindfulness */
+.navbar__logo {
+  display: none;
+  position: absolute;
+  left: 6vw;
+  top: 1vh;
+  width: 350px;
   padding-left: 10px;
   color: inherit;
   transition: all 0.23;
@@ -51,7 +64,9 @@
 .navbar__left {
   flex: 2;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 10vw;
 }
 
 .navbar__right {
@@ -62,7 +77,6 @@
 .navbar__phoneContainer {
   display: flex;
   align-items: center;
-  padding-top: 5%;
 }
 
 .navbar__list {
@@ -79,7 +93,7 @@
 
 .navbar__li > a {
   font-size: 1.5rem;
-  color: #202020;
+  color: #222220;
   text-decoration: none;
   cursor: pointer;
 }
@@ -102,7 +116,7 @@
   border: none;
   outline: none;
   padding: 10px 20px;
-  font-size: 2.5rem;
+  font-size: 1.75rem;
   font-family: "Asap", sans-serif;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
