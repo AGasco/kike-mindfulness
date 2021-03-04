@@ -9,7 +9,7 @@ import Footer from "./components/Footer";
 import { Route, Switch } from "react-router-dom";
 import React, { Component } from "react";
 import * as data from "./data.json";
-import "./App.css";
+import "./App.scss";
 import HappyPeople from "./components/HappyPeople";
 import Testimonios from "./components/Testimonios";
 
@@ -25,7 +25,7 @@ class App extends Component {
                 path="/programas/:id"
                 render={(props) => (
                   <React.Fragment>
-                    <Navbar hidden />
+                    {/* <Navbar hidden /> */}
                     <ProgramaPage {...props} />
                   </React.Fragment>
                 )}
@@ -34,7 +34,7 @@ class App extends Component {
                 path="/contacto/:id"
                 render={(props) => (
                   <React.Fragment>
-                    <Navbar hidden />
+                    {/* <Navbar hidden /> */}
                     <Contacto programas={data.default} match={props.match} />
                   </React.Fragment>
                 )}

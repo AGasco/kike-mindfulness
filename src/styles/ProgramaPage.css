@@ -13,13 +13,29 @@
   left: 0;
 }
 
+.programaPage__left,
+.programaPage__right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .programaPage__left {
-  flex: 0.3;
+  flex: 0.5;
 }
 .programaPage__right {
   flex: 1;
-  display: flex;
-  align-items: center;
+}
+
+.programaPage__logo {
+  width: 90%;
+  align-self: flex-start;
+  max-width: 200px;
+  padding-bottom: 20px;
+}
+
+.programaPage__video {
+  margin-bottom: 20vh;
 }
 
 .programaPage__picture {
@@ -51,10 +67,6 @@
 .programaPage__subtitle {
   font-family: "Asap", sans-serif;
   padding-bottom: 30px;
-}
-
-.programaPage__video {
-  margin-bottom: 20vh;
 }
 
 .programaPage__buttons {

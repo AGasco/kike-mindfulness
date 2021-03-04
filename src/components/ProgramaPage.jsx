@@ -3,6 +3,7 @@ import ReactPlayer from "react-player/youtube";
 import Thumbnail from "./../imgs/pensamientosNegativos.jpg";
 import * as data from "./../data.json";
 import { Link } from "react-router-dom";
+import Logo from "./../imgs/logo_black.png";
 import "./../styles/ProgramaPage.css";
 
 class ProgramaPage extends Component {
@@ -22,7 +23,13 @@ class ProgramaPage extends Component {
     const { programa } = this.state;
     return (
       <div className="programaPage">
-        <div className="programaPage__left"></div>
+        <div className="programaPage__left">
+          <img
+            className="programaPage__logo"
+            src={Logo}
+            alt="Logo de KikeMindfulness"
+          />
+        </div>
         <div className="programaPage__container">
           <h1 className="programaPage__title">{programa.title}</h1>
           {/* <h4 className="programaPage__subtitle">{programa.subtitle}</h4> */}
