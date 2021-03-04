@@ -1,7 +1,7 @@
 .contacto {
-  height: 90vh;
   background-color: white;
-  /* margin-bottom: 15vh !important; */
+  height: auto;
+  margin-bottom: 10vh !important;
 }
 
 .contacto__container {

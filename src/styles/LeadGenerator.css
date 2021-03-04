@@ -48,14 +48,14 @@
   }
 }
 
-@media (max-width: 730px) {
+@media (max-width: 800px) {
   .leadGenerator__video {
     width: 480px !important;
     height: 270px !important;
   }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 600px) {
   .leadGenerator__container > h4 {
     font-size: 1.3rem;
   }
@@ -68,7 +68,7 @@
   }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 400px) {
   .leadGenerator__container > h4 {
     font-size: 1.1rem;
   }
@@ -81,7 +81,7 @@
   }
 }
 
-@media (max-width: 300px) {
+@media (max-width: 320px) {
   .leadGenerator__container > h4 {
     font-size: 1rem;
   }
