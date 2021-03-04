@@ -1,29 +1,53 @@
 .happyPeople {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.happyPeople__top, .happyPeople__bottom {
-    flex: 1;
-    display: flex;
-    justify-content: center;
+.happyPeople__top,
+.happyPeople__bottom {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .happyPeople__pic {
-    object-fit: cover;
+  object-fit: cover;
+  width: 400px;
+  height: 300px;
+  margin: 10px;
+  /* border-radius: 100vw; */
+}
+
+@media (max-width: 1450px) {
+  .happyPeople__pic {
+    width: 350px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 1225px) {
+  .happyPeople__pic {
     width: 300px;
-    height: auto;
-    margin: 10px;
-    /* border-radius: 100vw; */
+    height: 200px;
+  }
 }
 
 @media (max-width: 1050px) {
-    .happyPeople__top, .happyPeople__bottom {
-        flex-direction: column;
-    }
-    .happyPeople__pic {
-        width: 60vw !important;
-    }
+  .happyPeople__top,
+  .happyPeople__bottom {
+    flex-direction: column;
+  }
+  .happyPeople__pic {
+    width: 60vw !important;
+  }
+}
+
+@media (max-width: 440px) {
+  .happyPeople__pic {
+    width: 250px;
+    height: 150px;
+  }
 }
