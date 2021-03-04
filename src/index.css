@@ -1,5 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Anton&family=Asap&family=Darker+Grotesque:wght@300;400&family=Wire+One&display=swap');
-*, *::before, *::after {
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Anton&family=Dancing+Script:wght@400&family=Asap&family=Darker+Grotesque:wght@300;400&family=Wire+One&display=swap");
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -15,13 +17,16 @@ body {
   overflow-y: scroll;
   max-width: 100vw !important;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
 }
 
 #root {

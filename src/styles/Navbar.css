@@ -23,11 +23,15 @@
 .navbar__logo {
   position: absolute;
   left: 6vw;
-  top: 1vh;
-  width: 350px;
+  top: 2vh;
+  width: 15vw;
   padding-left: 10px;
   color: inherit;
   transition: all 0.23;
+}
+
+.navbar__logo.hidden {
+  left: 1vw;
 }
 
 .navbar__icon {
@@ -41,6 +45,7 @@
   text-decoration: none;
   white-space: nowrap;
   transition: all 0.3s;
+  cursor: default;
 }
 
 .navbar__icon > a:hover {

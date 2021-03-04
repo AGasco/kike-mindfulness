@@ -15,7 +15,7 @@ class Navbar extends Component {
           <div>
             <h1 className="navbar__icon hidden">
               <RouterLink to="/">
-                <img className="navbar__logo" src={Logo} alt="logo" />
+                <img className="navbar__logo hidden" src={Logo} alt="logo" />
               </RouterLink>
             </h1>
           </div>
