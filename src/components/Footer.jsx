@@ -75,6 +75,10 @@ function Footer() {
             <p>620 648 806</p>
           </div>
         </div>
+        <div className="footer__designedBy">
+          <span>Diseño y Web - </span>
+          <a href="https://antoniofgasco.com">Antonio F. Gasco</a>
+        </div>
       </div>
     </div>
   );
