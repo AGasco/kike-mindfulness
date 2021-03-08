@@ -132,32 +132,33 @@
 @media (max-width: 1640px) {
   .programaPage {
     overflow-y: visible;
-  }
-  .programaPage__container {
-    padding: 0px 30px 0 50px;
-    margin-right: 0;
-    flex: 0.8;
-    max-width: 35vw;
-  }
 
-  .programaPage__video {
-    width: 480px !important;
-    height: 270px !important;
-  }
-  .programaPage__title {
-    font-size: 2rem;
-    white-space: nowrap;
-  }
+    &__container {
+      padding: 0px 30px 0 50px;
+      margin-right: 0;
+      flex: 0.8;
+      max-width: 35vw;
+    }
 
-  .programaPage__description {
-    font-size: 0.9rem;
-  }
+    &__video {
+      width: 480px !important;
+      height: 270px !important;
+    }
+    &__title {
+      font-size: 2rem;
+      white-space: nowrap;
+    }
 
-  .programaPage__buttons * {
-    font-size: 2.2rem;
-  }
-  .programaPage__picture {
-    max-width: 600px;
+    &__description {
+      font-size: 0.9rem;
+    }
+
+    &__buttons * {
+      font-size: 2.2rem;
+    }
+    &__picture {
+      max-width: 600px;
+    }
   }
 }
 
@@ -169,65 +170,66 @@
 }
 
 @media (max-width: 1200px) {
-  .programaPage__container {
-    max-width: 50vw;
-  }
-  .programaPage__description {
-    font-size: 1rem;
-  }
-
   .programaPage {
     flex-direction: column;
     overflow-y: visible;
     align-items: center;
-  }
-  .programaPage__video,
-  .programaPage__picture {
-    margin-top: 10vh;
-  }
 
-  /* .programaPage__right {
-    display: none;
-  } */
+    &__container {
+      max-width: 50vw;
+    }
+    &__description {
+      font-size: 1rem;
+    }
+
+    &__video,
+    &__picture {
+      margin-top: 10vh;
+    }
+  }
 }
 
 @media (max-width: 800px) {
-  .programaPage__container {
-    max-width: 60vw;
+  .programaPage {
+    &__container {
+      max-width: 60vw;
+    }
+
+    &__left {
+      flex: 0.2;
+    }
   }
 
-  .programaPage__left {
-    flex: 0.2;
-  }
   .navbar__logo {
     display: none;
   }
 }
 
 @media (max-width: 600px) {
-  .programaPage__container {
-    max-width: 70vw;
-  }
-  .programaPage__buttons * {
-    font-size: 1.9rem;
-  }
-
   .programaPage {
     overflow-x: hidden !important;
-  }
-  .programaPage__backBtn,
-  .programaPage.confirmBtn {
-    width: 180px;
-  }
 
-  .programaPage__video {
-    margin-top: 10vh;
-    width: 360px !important;
-    height: 202px !important;
-  }
+    &__container {
+      max-width: 70vw;
+    }
+    &__buttons * {
+      font-size: 1.9rem;
+    }
 
-  .programaPage__description {
-    font-size: 0.7rem;
+    &__backBtn,
+    &.confirmBtn {
+      width: 180px;
+    }
+
+    &__video {
+      margin-top: 10vh;
+      width: 360px !important;
+      height: 202px !important;
+    }
+
+    &__description {
+      font-size: 0.7rem;
+    }
   }
 
   .navbar__logo {
@@ -236,72 +238,80 @@
 }
 
 @media (max-width: 450px) {
-  .programaPage__left {
-    display: none;
-  }
-  .programaPage__container {
-    padding: 0;
-  }
-  .programaPage__title {
-    font-size: 1.5rem;
-  }
+  .programaPage {
+    .programaPage__left {
+      display: none;
+    }
+    &__container {
+      padding: 0;
+    }
+    &__title {
+      font-size: 1.5rem;
+    }
 
-  .programaPage__left {
-    flex: 0.15;
-  }
+    &__left {
+      flex: 0.15;
+    }
 
-  .programaPage__backBtn,
-  .programaPage__confirmBtn {
-    width: 150px !important;
-  }
+    &__backBtn,
+    &__confirmBtn {
+      width: 150px !important;
+    }
 
-  .programaPage__confirmBtn {
-    padding: 10px 0;
-  }
-  .programaPage__buttons * {
-    font-size: 1.5rem;
+    &__confirmBtn {
+      padding: 10px 0;
+    }
+    &__buttons * {
+      font-size: 1.5rem;
+    }
   }
 }
 
 @media (max-width: 360px) {
-  .programaPage__description {
-    font-size: 0.65rem;
-  }
+  .programaPage {
+    &__description {
+      font-size: 0.65rem;
+    }
 
-  .programaPage__video {
-    margin-top: 10vh;
-    width: 270px !important;
-    height: 151.5px !important;
+    &__video {
+      margin-top: 10vh;
+      width: 270px !important;
+      height: 151.5px !important;
+    }
   }
 }
 
 @media (max-width: 320px) {
-  .programaPage__title {
-    font-size: 1.33rem;
-  }
-  .programaPage__description {
-    font-size: 0.6rem;
-  }
-  .programaPage__buttons * {
-    font-size: 1.2rem;
-  }
-  .programaPage__backBtn,
-  .programaPage__confirmBtn {
-    width: 125px !important;
+  .programaPage {
+    &__title {
+      font-size: 1.33rem;
+    }
+    &__description {
+      font-size: 0.6rem;
+    }
+    &__buttons * {
+      font-size: 1.2rem;
+    }
+    &__backBtn,
+    &__confirmBtn {
+      width: 125px !important;
+    }
   }
 }
 
 @media (max-width: 280px) {
-  .programaPage__title {
-    font-size: 1.1rem;
-  }
-  .programaPage__video {
-    margin-top: 10vh;
-    width: 216px !important;
-    height: 120px !important;
-  }
-  .programaPage__container {
-    max-width: 75vw;
-    padding-right: 10px;
+  .programaPage {
+    &__title {
+      font-size: 1.1rem;
+    }
+    &__video {
+      margin-top: 10vh;
+      width: 216px !important;
+      height: 120px !important;
+    }
+    &__container {
+      max-width: 75vw;
+      padding-right: 10px;
+    }
   }
 }

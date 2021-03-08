@@ -36,12 +36,14 @@
 }
 
 @media (max-width: 1050px) {
-  .happyPeople__top,
-  .happyPeople__bottom {
-    flex-direction: column;
-  }
-  .happyPeople__pic {
-    width: 60vw !important;
+  .happyPeople {
+    &__top,
+    &__bottom {
+      flex-direction: column;
+    }
+    &__pic {
+      width: 60vw !important;
+    }
   }
 }
 

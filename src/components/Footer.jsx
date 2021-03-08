@@ -75,7 +75,7 @@ function Footer() {
           </div>
         </div>
         <div className="footer__designedBy">
-          <a href="https://antoniofgasco.com">
+          <a href="https://antoniofgasco.com" target="_blank" rel="noreferrer">
             Diseño y Web - <span>antoniofgasco</span>
           </a>
         </div>

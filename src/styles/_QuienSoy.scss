@@ -35,12 +35,13 @@
 @media (max-width: 1200px) {
   .quienSoy {
     padding-right: 0;
-  }
-  .quienSoy__title {
-    padding-left: 0;
-  }
-  .quienSoy__video {
-    margin: 50px auto auto auto;
+
+    &__title {
+      padding-left: 0;
+    }
+    &__video {
+      margin: 50px auto auto auto;
+    }
   }
 }
 
@@ -52,12 +53,14 @@
 }
 
 @media (max-width: 530px) {
-  .quienSoy__video {
-    width: 320px !important;
-    height: 180px !important;
-  }
-  .quienSoy__description {
-    width: 80%;
+  .quienSoy {
+    &__video {
+      width: 320px !important;
+      height: 180px !important;
+    }
+    &__description {
+      width: 80%;
+    }
   }
 }
 

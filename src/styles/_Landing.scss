@@ -76,77 +76,88 @@
 }
 
 @media (max-width: 1750px) {
-  .landing__claim {
-    font-size: 5rem;
-  }
-  .landing__container > h1 {
-    font-size: 5rem;
-    bottom: 2vh;
-    right: 6vw;
+  .landing {
+    &__claim {
+      font-size: 5rem;
+    }
+    &__container > h1 {
+      font-size: 5rem;
+      bottom: 2vh;
+      right: 6vw;
+    }
   }
 }
 
 @media (max-width: 1650px) {
-  .landing__claim {
-    font-size: 4rem;
-  }
-  .landing__container > h1 {
-    font-size: 4rem;
-    bottom: 2vh;
-  }
-  .landing > h1 {
-    font-size: 5rem;
-    top: 27.5%;
+  .landing {
+    & > h1 {
+      font-size: 5rem;
+      top: 27.5%;
+    }
+    &__claim {
+      font-size: 4rem;
+    }
+    &__container > h1 {
+      font-size: 4rem;
+      bottom: 2vh;
+    }
   }
 }
 
 @media (max-width: 1380px) {
-  .landing__claim {
-    font-size: 3.5rem;
-  }
-  .landing__container > h1 {
-    font-size: 4rem;
+  .landing {
+    &__claim {
+      font-size: 3.5rem;
+    }
+    &__container > h1 {
+      font-size: 4rem;
+    }
   }
 }
 
 @media (max-width: 1250px) {
-  .landing__claim {
-    font-size: 3rem;
-    padding: 5px 30px 5px 10px;
-  }
-  .landing__container > h1 {
-    font-size: 3rem;
-    bottom: 3vh;
+  .landing {
+    &__claim {
+      font-size: 3rem;
+      padding: 5px 30px 5px 10px;
+    }
+    &__container > h1 {
+      font-size: 3rem;
+      bottom: 3vh;
+    }
   }
 }
 
 @media (max-width: 700px) {
   .landing {
     background-position: center;
-  }
-  .landing__container {
-    height: 40%;
-  }
-  .landing__claim {
-    font-size: 3rem;
-    width: 100%;
-    border-radius: 0;
-    text-align: center;
-  }
-  .landing__container > h1 {
-    font-size: 3rem;
-    bottom: 3vh;
+
+    &__container {
+      height: 40%;
+      & > h1 {
+        font-size: 3rem;
+        bottom: 3vh;
+      }
+    }
+    &__claim {
+      font-size: 3rem;
+      width: 100%;
+      border-radius: 0;
+      text-align: center;
+    }
   }
 }
 
 @media (max-width: 375px) {
-  .landing__claim {
-    font-size: 2.5rem;
-  }
-  .landing__container > h1 {
-    font-size: 2rem;
-    bottom: 4vh;
-    right: 7vw;
+  .landing {
+    &__claim {
+      font-size: 2.5rem;
+    }
+    &__container > h1 {
+      font-size: 2rem;
+      bottom: 4vh;
+      right: 7vw;
+    }
   }
 }
 
@@ -306,31 +317,3 @@
     display: none;
   }
 }
-
-/* @media (max-width: 425px) {
-    .landing__mainSide {
-        left: -31vw;
-        bottom: 35vh;
-    }
-}
-
-@media (max-width: 399px) {
-    .landing__mainSide {
-        left: -33vw;
-        bottom: 40vh;
-    }
-}
-
-@media (max-width: 379px) {
-    .landing__mainSide {
-        left: -35vw;
-        bottom: 50vh;
-    }
-}
-
-@media (max-width: 361px) {
-    .landing__mainSide {
-        left: -36vw;
-        bottom: 55vh;
-    }
-} */
