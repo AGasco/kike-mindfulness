@@ -3,22 +3,22 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-}
 
-.happyPeople__top,
-.happyPeople__bottom {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  &__top,
+  &__bottom {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-.happyPeople__pic {
-  object-fit: cover;
-  width: 400px;
-  height: 300px;
-  margin: 10px;
-  /* border-radius: 100vw; */
+  &__pic {
+    object-fit: cover;
+    width: 400px;
+    height: 300px;
+    margin: 10px;
+    /* border-radius: 100vw; */
+  }
 }
 
 @media (max-width: 1450px) {

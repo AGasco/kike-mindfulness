@@ -11,126 +11,121 @@
   position: absolute;
   top: 5vh;
   left: 0;
-}
 
-.programaPage__left,
-.programaPage__right {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+  &__left,
+  &__right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-.programaPage__left {
-  flex: 0.5;
-}
-.programaPage__right {
-  flex: 1;
-}
+  &__left {
+    flex: 0.5;
+  }
+  &__right {
+    flex: 1;
+  }
 
-.programaPage__logo {
-  width: 90%;
-  align-self: flex-start;
-  max-width: 200px;
-  padding-bottom: 20px;
-}
+  &__logo {
+    width: 90%;
+    align-self: flex-start;
+    max-width: 200px;
+    padding-bottom: 20px;
+  }
 
-.programaPage__video {
-  margin-bottom: 20vh;
-}
+  &__video {
+    margin-bottom: 20vh;
+  }
 
-.programaPage__picture {
-  width: 80vw;
-  min-width: 200px;
-  max-width: 700px;
-  padding-bottom: 20vh;
-}
+  &__picture {
+    width: 80vw;
+    min-width: 200px;
+    max-width: 700px;
+    padding-bottom: 20vh;
+  }
 
-.programaPage__container {
-  padding: 20px 50px 0 75px;
-  margin-right: 50px;
-  flex: 0.8;
-  max-width: 35vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+  &__container {
+    padding: 20px 50px 0 75px;
+    margin-right: 50px;
+    flex: 0.8;
+    max-width: 35vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-.programaPage__title {
-  /* width: 120%; */
-  font-family: "anton", sans-serif;
-  padding: 20px;
-  padding-top: 0;
-  text-align: center;
-  font-size: 2.5rem;
-  white-space: nowrap;
-}
+  &__title {
+    /* width: 120%; */
+    font-family: "anton", sans-serif;
+    padding: 20px;
+    padding-top: 0;
+    text-align: center;
+    font-size: 2.5rem;
+    white-space: nowrap;
+  }
 
-.programaPage__subtitle {
-  font-family: "Asap", sans-serif;
-  padding-bottom: 30px;
-}
+  &__subtitle {
+    font-family: "Asap", sans-serif;
+    padding-bottom: 30px;
+  }
 
-.programaPage__buttons {
-  width: max-content !important;
-  padding: 50px 0 0 0;
-  display: flex;
-}
+  &__buttons {
+    width: max-content !important;
+    padding: 50px 0 0 0;
+    display: flex;
 
-.programaPage__buttons > * {
-  flex: 1;
-}
+    & > * {
+      flex: 1;
 
-.programaPage__backBtn,
-.programaPage__confirmBtn {
-  /* width: 400px !important; */
-  margin: 0 5px;
-}
+      & > a {
+        text-decoration: none;
+        color: inherit;
+      }
+    }
+  }
 
-/* .programaPage__confirmLink {
-  width: 400px !important;
-} */
+  &__backBtn,
+  &__confirmBtn {
+    margin: 0 5px;
+  }
 
-.programaPage__buttons > * > a {
-  text-decoration: none;
-  color: inherit;
-}
+  &__backBtn {
+    width: 240px;
+    cursor: pointer;
+    padding: 10px 20px;
+    color: #ccc;
+    background-color: #202020;
+    border: none;
+    outline: none;
+    font-size: 2.2rem;
+    transition: all 0.4s;
+    font-family: "Wire One", sans-serif;
 
-.programaPage__backBtn {
-  width: 240px;
-  cursor: pointer;
-  padding: 10px 20px;
-  color: #ccc;
-  background-color: #202020;
-  border: none;
-  outline: none;
-  font-size: 2.2rem;
-  transition: all 0.4s;
-  font-family: "Wire One", sans-serif;
-}
+    &:hover {
+      color: white;
+      box-shadow: -5px 5px 5px rgba(196, 77, 77, 0.6);
+      background-color: #e36f6f;
+    }
+  }
 
-.programaPage__backBtn:hover {
-  color: white;
-  box-shadow: -5px 5px 5px rgba(196, 77, 77, 0.6);
-  background-color: #e36f6f;
-}
+  &__confirmBtn {
+    width: 240px;
+    cursor: pointer;
+    padding: 10px 20px;
+    color: white;
+    background-color: #202020;
+    border: none;
+    outline: none;
+    font-size: 2.2rem;
+    transition: all 0.4s;
+    font-family: "Wire One", sans-serif;
 
-.programaPage__confirmBtn {
-  width: 240px;
-  cursor: pointer;
-  padding: 10px 20px;
-  color: white;
-  background-color: #202020;
-  border: none;
-  outline: none;
-  font-size: 2.2rem;
-  transition: all 0.4s;
-  font-family: "Wire One", sans-serif;
-}
-
-.programaPage__confirmBtn:hover {
-  color: white;
-  box-shadow: 5px 5px 5px rgba(54, 150, 54, 0.6);
-  background-color: #4bb34b;
+    &:hover {
+      color: white;
+      box-shadow: 5px 5px 5px rgba(54, 150, 54, 0.6);
+      background-color: #4bb34b;
+    }
+  }
 }
 
 /* Media queries */

@@ -1,11 +1,10 @@
 .programas {
-    height: max-content;
-    min-height: max-content;
-    background-color: white;
-    padding-top: 50px;
-}
+  height: max-content;
+  min-height: max-content;
+  background-color: white;
+  padding-top: 50px;
 
-.programas__container {
+  &__container {
     height: max-content;
     min-height: max-content !important;
     display: flex;
@@ -13,20 +12,20 @@
     align-items: center;
     justify-content: flex-start;
     padding-top: 50px;
-}
+  }
 
-.programas__title {
+  &__title {
     font-family: "Anton", sans-serif;
     font-size: 3rem;
-}
+  }
 
-.programas__subtitle {
+  &__subtitle {
     font-family: "Darker Grotesque", sans-serif;
     font-size: 1.5rem;
     text-align: center;
-}
+  }
 
-.programas__list {
+  &__list {
     width: 60%;
     height: max-content;
     padding-left: 0;
@@ -35,26 +34,27 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+  }
 }
 
 @media (max-width: 1120px) {
-    .programas__list {
-        flex-direction: column;
-        width: max-content;
-    }
+  .programas__list {
+    flex-direction: column;
+    width: max-content;
+  }
 }
 
 @media (max-width: 1000px) {
-    .programas__subtitle {
-        width: 50vw;
-        font-size: 1.3rem;
-    }
+  .programas__subtitle {
+    width: 50vw;
+    font-size: 1.3rem;
+  }
 }
 
 @media (max-width: 1000px) {
-    .programas__subtitle {
-        width: 60vw;
-        font-size: 1.2rem;
-        padding-bottom: 20px;
-    }
+  .programas__subtitle {
+    width: 60vw;
+    font-size: 1.2rem;
+    padding-bottom: 20px;
+  }
 }

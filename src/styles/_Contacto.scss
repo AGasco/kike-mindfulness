@@ -2,135 +2,133 @@
   background-color: white;
   height: auto;
   margin-bottom: 10vh !important;
-}
 
-.contacto__container {
-  min-height: max-content;
-  padding-top: 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-}
+  &__container {
+    min-height: max-content;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
 
-.contacto__title {
-  font-family: "Anton", sans-serif;
-  font-size: 3rem;
-}
+  &__title {
+    font-family: "Anton", sans-serif;
+    font-size: 3rem;
+  }
 
-.contacto__subtitle {
-  /* font-family: "Anton", sans-serif;
-    font-family: "Asap", sans-serif; */
-  font-family: "Darker Grotesque", sans-serif;
-  font-size: 1.5rem;
-  text-align: center;
-}
+  &__subtitle {
+    /* font-family: "Anton", sans-serif;
+      font-family: "Asap", sans-serif; */
+    font-family: "Darker Grotesque", sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+  }
 
-.contacto form {
-  padding: 20px;
-  padding-top: 5px;
-  /* font-family: "Anton", sans-serif;
-    font-family: "Asap", sans-serif;
-    font-family: "Darker Grotesque", sans-serif; */
-  font-family: "Wire One", sans-serif;
-  font-size: 2rem;
-  width: 50vw;
-  max-width: 90vw !important;
-  min-width: 450px;
-}
+  & form {
+    padding: 20px;
+    padding-top: 5px;
+    /* font-family: "Anton", sans-serif;
+      font-family: "Asap", sans-serif;
+      font-family: "Darker Grotesque", sans-serif; */
+    font-family: "Wire One", sans-serif;
+    font-size: 2rem;
+    width: 50vw;
+    max-width: 90vw !important;
+    min-width: 450px;
+  }
 
-.contacto__horizFormElem {
-  display: flex;
-}
+  &__horizFormElem {
+    display: flex;
+  }
 
-.contacto__horizFormElem > * {
-  flex: 1;
-}
+  &__horizFormElem > * {
+    flex: 1;
+  }
 
-.contacto__formElem {
-  display: flex;
-  flex-direction: column;
-  padding: 5px;
-}
+  &__formElem {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
 
-.contacto__formElem > input,
-.contacto__formElem > select,
-.contacto__formElem > textarea {
-  border: none;
-  padding: 10px;
-  background-color: #eee;
-  font-family: inherit;
-  font-size: 1.75rem;
-}
+    & > input,
+    & > select,
+    & > textarea {
+      border: none;
+      padding: 10px;
+      background-color: #eee;
+      font-family: inherit;
+      font-size: 1.75rem;
 
-.contacto__formElem > input:focus,
-.contacto__formElem > select:focus,
-.contacto__formElem > textarea:focus {
-  outline: none;
-}
+      &:focus {
+        outline: none;
+      }
+    }
+  }
 
-.contacto__submit {
-  background-color: #202020 !important;
-  color: white;
-  font-size: 4rem !important;
-  cursor: pointer;
-  transition: all 0.2s;
-}
+  &__submit {
+    background-color: #202020 !important;
+    color: white;
+    font-size: 4rem !important;
+    cursor: pointer;
+    transition: all 0.2s;
 
-.contacto__submit:hover {
-  background-color: goldenrod !important;
-  color: #202020;
-}
+    &:hover {
+      background-color: goldenrod !important;
+      color: #202020;
+    }
 
-.contacto__submit:active {
-  transform: scale(0.95);
-}
+    &:active {
+      transform: scale(0.95);
+    }
+  }
 
-.contacto__lead {
-  max-width: 40vw;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 10vh;
-}
+  &__lead {
+    max-width: 40vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10vh;
+  }
 
-.contacto__leadTitle,
-.contacto__leadSubtitle {
-  font-family: "Darker Grotesque", sans-serif;
-  font-size: 2.5rem;
-  padding-bottom: 30px;
-  text-align: center;
-}
+  &__leadTitle,
+  &__leadSubtitle {
+    font-family: "Darker Grotesque", sans-serif;
+    font-size: 2.5rem;
+    padding-bottom: 30px;
+    text-align: center;
+  }
 
-.contacto__graciasContainer {
-  display: flex;
-  flex-direction: column;
-}
+  &__leadSubtitle {
+    font-size: 1.5rem;
+  }
 
-.contacto__leadSubtitle {
-  font-size: 1.5rem;
-}
+  &__graciasContainer {
+    display: flex;
+    flex-direction: column;
+  }
 
-.contacto__volver {
-  margin: auto auto;
-}
+  &__volver {
+    margin: auto auto;
 
-.contacto__volver > button {
-  cursor: pointer;
-  padding: 10px 20px;
-  color: #ccc;
-  background-color: #202020;
-  border: none;
-  outline: none;
-  font-size: 3rem;
-  transition: all 0.4s;
-  font-family: "Wire One", sans-serif;
-}
+    & > button {
+      cursor: pointer;
+      padding: 10px 20px;
+      color: #ccc;
+      background-color: #202020;
+      border: none;
+      outline: none;
+      font-size: 3rem;
+      transition: all 0.4s;
+      font-family: "Wire One", sans-serif;
 
-.contacto__volver > button:hover {
-  color: #202020;
-  background-color: goldenrod;
+      &:hover {
+        color: #202020;
+        background-color: goldenrod;
+      }
+    }
+  }
 }
 
 @media (max-width: 1700px) {

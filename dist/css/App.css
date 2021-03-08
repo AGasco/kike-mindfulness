@@ -31,7 +31,7 @@
 
 .contacto__subtitle {
   /* font-family: "Anton", sans-serif;
-    font-family: "Asap", sans-serif; */
+      font-family: "Asap", sans-serif; */
   font-family: "Darker Grotesque", sans-serif;
   font-size: 1.5rem;
   text-align: center;
@@ -41,8 +41,8 @@
   padding: 20px;
   padding-top: 5px;
   /* font-family: "Anton", sans-serif;
-    font-family: "Asap", sans-serif;
-    font-family: "Darker Grotesque", sans-serif; */
+      font-family: "Asap", sans-serif;
+      font-family: "Darker Grotesque", sans-serif; */
   font-family: "Wire One", sans-serif;
   font-size: 2rem;
   width: 50vw;
@@ -124,12 +124,15 @@
   margin-top: 10vh;
 }
 
-.contacto__leadTitle,
-.contacto__leadSubtitle {
+.contacto__leadTitle, .contacto__leadSubtitle {
   font-family: "Darker Grotesque", sans-serif;
   font-size: 2.5rem;
   padding-bottom: 30px;
   text-align: center;
+}
+
+.contacto__leadSubtitle {
+  font-size: 1.5rem;
 }
 
 .contacto__graciasContainer {
@@ -140,10 +143,6 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-.contacto__leadSubtitle {
-  font-size: 1.5rem;
 }
 
 .contacto__volver {
@@ -300,8 +299,7 @@
   position: relative;
 }
 
-.footer__left,
-.footer__right {
+.footer__left, .footer__right {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -311,6 +309,22 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.footer__right {
+  min-height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .footer__logo {
@@ -337,19 +351,19 @@
           align-items: center;
 }
 
-.footer__quote {
-  font-family: "Darker Grotesque", sans-serif;
-  padding: 20px;
-  font-size: 1.2rem;
-  text-align: center;
-}
-
 .footer__center > p {
   font-family: "Darker Grotesque", sans-serif;
   font-size: 1.2rem;
   padding-top: 10px;
   padding-bottom: 10px;
   line-height: 1rem;
+}
+
+.footer__quote {
+  font-family: "Darker Grotesque", sans-serif;
+  padding: 20px;
+  font-size: 1.2rem;
+  text-align: center;
 }
 
 .footer__socialMedia {
@@ -368,22 +382,6 @@
   margin: 0 10px;
   font-size: 2rem;
   cursor: pointer;
-}
-
-.footer__right {
-  min-height: 100px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
 }
 
 .footer__nav {
@@ -449,15 +447,15 @@
   font-style: italic;
 }
 
-.footer__designedBy span {
-  font-family: "Dancing Script", cursive;
-  font-size: 1.5rem;
-}
-
 .footer__designedBy > a {
   text-decoration: none;
   color: white;
   font-style: italic;
+}
+
+.footer__designedBy span {
+  font-family: "Dancing Script", cursive;
+  font-size: 1.5rem;
 }
 
 @media (max-width: 1260px) {
@@ -617,8 +615,7 @@
           align-items: center;
 }
 
-.happyPeople__top,
-.happyPeople__bottom {
+.happyPeople__top, .happyPeople__bottom {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -700,7 +697,7 @@
   color: white;
   position: absolute;
   /* left: 20%;
-    top: 25%; */
+        top: 25%; */
   right: 6.5vw;
   bottom: 5vh;
 }
@@ -710,7 +707,7 @@
   font-size: 5.5rem;
   color: white;
   /* left: 12%;
-    top: 37.5%; */
+      top: 37.5%; */
   left: 7.5vw;
   top: 35vh;
   padding: 20px 30px 10px 20px;
@@ -721,22 +718,13 @@
   transition: all 0.3s;
 }
 
-.landing__claim:hover {
-  background-color: rgba(218, 165, 32, 0.7);
-}
-
 .landing__claim > h3 {
   line-height: 5rem;
   text-align: center;
 }
 
-.landing__mainSide > a {
-  text-decoration: none;
-  color: #202020;
-}
-
-.landing__mainSide > a:first-of-type {
-  margin: 0 5px 0 10px;
+.landing__claim:hover {
+  background-color: rgba(218, 165, 32, 0.7);
 }
 
 .landing__mainSide {
@@ -754,6 +742,15 @@
   position: fixed;
   left: -4vw;
   bottom: 20vh;
+}
+
+.landing__mainSide > a {
+  text-decoration: none;
+  color: #202020;
+}
+
+.landing__mainSide > a:first-of-type {
+  margin: 0 5px 0 10px;
 }
 
 @media (min-width: 2000px) {
@@ -1022,8 +1019,6 @@
     }
 } */
 .leadGenerator {
-  /* height: 100%; */
-  /* width: 100vw !important; */
   padding-top: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1134,6 +1129,17 @@
 
 .navbar {
   margin-bottom: 0 !important;
+  /* Letras KIKEMINDFULNESS */
+  /* &__logo {
+  position: absolute;
+  left: 2vw;
+  top: 2vh;
+  width: 166px;
+  padding-left: 10px;
+  color: inherit;
+  transition: all 0.23;
+} */
+  /* Logo KikeMindfulness */
 }
 
 .navbar > div {
@@ -1148,21 +1154,7 @@
           justify-content: flex-start;
 }
 
-/* KIKEMINDFULNESS */
-/* .navbar__logo {
-  position: absolute;
-  left: 2vw;
-  top: 2vh;
-  width: 166px;
-  padding-left: 10px;
-  color: inherit;
-  transition: all 0.23;
-} */
-/* Logo KikeMindfulness */
 .navbar__logo {
-  /* position: absolute;
-  left: 6vw;
-  top: 2vh; */
   width: 15vw;
   padding-left: 10px;
   color: inherit;
@@ -1197,10 +1189,6 @@
   color: goldenrod;
 }
 
-/* .navbar__icon.hidden > a:hover {
-  filter: invert(66%) sepia(84%) saturate(465%) hue-rotate(357deg)
-    brightness(91%) contrast(87%);
-} */
 .navbar nav {
   -webkit-box-flex: 1.5;
       -ms-flex: 1.5;
@@ -1241,15 +1229,6 @@
           align-items: flex-end;
 }
 
-.navbar__phoneContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 .navbar__list {
   font-family: "Asap", sans-serif;
   font-size: 1.2rem;
@@ -1270,16 +1249,19 @@
   cursor: pointer;
 }
 
+.navbar__phoneContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .navbar__phone {
   font-family: "Asap", sans-serif;
   font-size: 1.5rem;
   padding: 5px 20px 5px 7px;
-}
-
-.navbar__cta {
-  /* position: absolute;
-    right: 0;
-    top: -28px; */
 }
 
 .navbar__cta > button {
@@ -1298,7 +1280,6 @@
 }
 
 .navbar__cta > button:hover {
-  /* color: #202020; */
   background-color: goldenrod;
 }
 
@@ -1346,9 +1327,6 @@
   .navbar__li > a,
   .navbar__phone {
     font-size: 1rem;
-  }
-  .navbar__cta > button {
-    /* font-size: 1.2rem; */
   }
 }
 
@@ -1471,8 +1449,7 @@
   text-align: center;
 }
 
-.programa__link,
-.programa__button {
+.programa__link, .programa__button {
   width: 100%;
   margin: auto auto 0 auto;
 }
@@ -1487,14 +1464,8 @@
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
   color: white;
-  /* font-family: 'Anton', sans-serif; */
-  /* font-family: 'Asap', sans-serif; */
-  font-family: "Wire One", sans-serif;
-}
-
-.programa__button {
-  color: white;
   text-decoration: none;
+  font-family: "Wire One", sans-serif;
 }
 
 .programa__button:hover {
@@ -1540,8 +1511,7 @@
   left: 0;
 }
 
-.programaPage__left,
-.programaPage__right {
+.programaPage__left, .programaPage__right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1634,18 +1604,13 @@
           flex: 1;
 }
 
-.programaPage__backBtn,
-.programaPage__confirmBtn {
-  /* width: 400px !important; */
-  margin: 0 5px;
-}
-
-/* .programaPage__confirmLink {
-  width: 400px !important;
-} */
 .programaPage__buttons > * > a {
   text-decoration: none;
   color: inherit;
+}
+
+.programaPage__backBtn, .programaPage__confirmBtn {
+  margin: 0 5px;
 }
 
 .programaPage__backBtn {
@@ -1958,10 +1923,7 @@
 }
 
 .quienSoy {
-  /* height: 100%;
-    width: 100%; */
   background-color: white;
-  /* padding-right: 20%; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

@@ -8,21 +8,21 @@
   width: 90vw;
   display: flex;
   flex-direction: column;
-}
 
-.app__top {
-  flex: 0.05;
-}
+  &__top {
+    flex: 0.05;
+  }
 
-.app__main {
-  flex: 0.95;
-}
+  &__main {
+    flex: 0.95;
+  }
 
-.app__allContainer {
-  width: 100%;
-  height: max-content;
-}
+  &__allContainer {
+    width: 100%;
+    height: max-content;
 
-.app__allContainer > * {
-  margin-bottom: 20vh;
+    & > * {
+      margin-bottom: 20vh;
+    }
+  }
 }

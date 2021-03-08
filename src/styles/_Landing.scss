@@ -4,68 +4,68 @@
   background-image: url("./../imgs/landing1.jpg");
   background-size: cover;
   background-position: 0 35%;
-}
 
-.landing__container {
-  display: flex;
-  height: 80%;
-  align-items: center;
-}
+  &__container {
+    display: flex;
+    height: 80%;
+    align-items: center;
 
-.landing__container > h1 {
-  font-family: "Anton", sans-serif;
-  font-size: 6rem;
-  color: white;
-  position: absolute;
-  /* left: 20%;
-    top: 25%; */
-  right: 6.5vw;
-  bottom: 5vh;
-}
+    & > h1 {
+      font-family: "Anton", sans-serif;
+      font-size: 6rem;
+      color: white;
+      position: absolute;
+      /* left: 20%;
+        top: 25%; */
+      right: 6.5vw;
+      bottom: 5vh;
+    }
+  }
 
-.landing__claim {
-  font-family: "Amatic SC", cursive;
-  font-size: 5.5rem;
-  color: white;
-  /* left: 12%;
-    top: 37.5%; */
-  left: 7.5vw;
-  top: 35vh;
-  padding: 20px 30px 10px 20px;
-  background-color: rgba(0, 0, 0, 0.7);
-  border-top-right-radius: 20em;
-  border-bottom-right-radius: 100px;
-  transition: all 0.3s;
-}
+  &__claim {
+    font-family: "Amatic SC", cursive;
+    font-size: 5.5rem;
+    color: white;
+    /* left: 12%;
+      top: 37.5%; */
+    left: 7.5vw;
+    top: 35vh;
+    padding: 20px 30px 10px 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-top-right-radius: 20em;
+    border-bottom-right-radius: 100px;
+    transition: all 0.3s;
 
-.landing__claim:hover {
-  background-color: rgba(218, 165, 32, 0.7);
-}
+    & > h3 {
+      line-height: 5rem;
+      text-align: center;
+    }
 
-.landing__claim > h3 {
-  line-height: 5rem;
-  text-align: center;
-}
+    &:hover {
+      background-color: rgba(218, 165, 32, 0.7);
+    }
+  }
 
-.landing__mainSide > a {
-  text-decoration: none;
-  color: #202020;
-}
+  &__mainSide {
+    display: flex;
+    align-items: center;
+    font-family: "Darker Grotesque", sans-serif;
+    font-size: 1.1rem;
+    color: #202020;
+    transform: rotateZ(-90deg);
+    position: fixed;
+    left: -4vw;
+    bottom: 20vh;
 
-.landing__mainSide > a:first-of-type {
-  margin: 0 5px 0 10px;
-}
+    & > a {
+      text-decoration: none;
+      color: #202020;
 
-.landing__mainSide {
-  display: flex;
-  align-items: center;
-  font-family: "Darker Grotesque", sans-serif;
-  font-size: 1.1rem;
-  color: #202020;
-  transform: rotateZ(-90deg);
-  position: fixed;
-  left: -4vw;
-  bottom: 20vh;
+      &:first-of-type {
+        margin: 0 5px 0 10px;
+      }
+    }
+  }
 }
 
 @media (min-width: 2000px) {
