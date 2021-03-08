@@ -1,6 +1,5 @@
 import React from "react";
 import Programa from "./Programa";
-import "./../styles/Programas.css";
 
 function Programas({ programas }) {
   return (

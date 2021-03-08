@@ -9,7 +9,7 @@ import Footer from "./components/Footer";
 import { Route, Switch } from "react-router-dom";
 import React, { Component } from "react";
 import * as data from "./data.json";
-import "./App.scss";
+import "./styles/App.scss";
 import HappyPeople from "./components/HappyPeople";
 import Testimonios from "./components/Testimonios";
 

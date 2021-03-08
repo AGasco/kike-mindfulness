@@ -4,7 +4,6 @@ import { Link as ScrollLink } from "react-scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons/";
 import NavbarLogo from "./../imgs/logo_navbar.jpg";
-import "./../styles/Navbar.css";
 
 class Navbar extends Component {
   render() {

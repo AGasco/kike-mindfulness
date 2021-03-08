@@ -1,0 +1,89 @@
+.quienSoy {
+  /* height: 100%;
+    width: 100%; */
+  background-color: white;
+  /* padding-right: 20%; */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.quienSoy__container {
+  padding-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.quienSoy__title {
+  font-family: "Anton", sans-serif;
+  font-size: 3rem;
+  padding-bottom: 1vh;
+  /* padding-left: 25%; */
+}
+
+.quienSoy__description {
+  font-family: "Asap", sans-serif;
+  font-size: 1.5rem;
+  width: 40%;
+  text-align: center;
+}
+
+.quienSoy__video {
+  margin: auto;
+  margin-top: 3vh;
+}
+
+@media (max-width: 1200px) {
+  .quienSoy {
+    padding-right: 0;
+  }
+  .quienSoy__title {
+    padding-left: 0;
+  }
+  .quienSoy__video {
+    margin: 50px auto auto auto;
+  }
+}
+
+@media (max-width: 700px) {
+  .quienSoy__video {
+    width: 480px !important;
+    height: 270px !important;
+  }
+}
+
+@media (max-width: 530px) {
+  .quienSoy__video {
+    width: 320px !important;
+    height: 180px !important;
+  }
+  .quienSoy__description {
+    width: 80%;
+  }
+}
+
+@media (max-width: 350px) {
+  .quienSoy__video {
+    width: 256px !important;
+    height: 144px !important;
+  }
+}
+/*# sourceMappingURL=QuienSoy.css.map */

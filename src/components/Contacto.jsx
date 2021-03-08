@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import emailjs from "emailjs-com";
 import ReactPlayer from "react-player/youtube";
 import { Link } from "react-router-dom";
-import "./../styles/Contacto.css";
 
 class Contacto extends Component {
   state = {

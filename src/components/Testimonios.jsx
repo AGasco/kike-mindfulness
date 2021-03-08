@@ -5,7 +5,6 @@ import VideoDaniel from "./../videos/testimonio_daniel.mp4";
 import FotoDaura from "./../imgs/testimonio_daura.jpg";
 import FotoInes from "./../imgs/testimonio_ines.jpg";
 import "./../styles/reactPlayer.css";
-import "./../styles/Testimonios.css";
 
 function Testimonios() {
   const createUrl = (file) => URL.createObjectURL(file);

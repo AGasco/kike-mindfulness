@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import ReactPlayer from "react-player/youtube";
 import Thumbnail from "./../imgs/pensamientosNegativos.jpg";
 import "./../styles/reactPlayer.css";
-import "./../styles/LeadGenerator.css";
 
 class LeadGenerator extends Component {
   render() {

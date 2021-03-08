@@ -7,7 +7,6 @@ import {
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons/";
 import { Link as ScrollLink } from "react-scroll";
 import logo from "./../imgs/logo.png";
-import "./../styles/Footer.css";
 
 function Footer() {
   return (

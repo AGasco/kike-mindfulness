@@ -4,7 +4,6 @@ import {
   faInstagram,
   faFacebookSquare,
 } from "@fortawesome/free-brands-svg-icons/";
-import "./../styles/Landing.css";
 
 function Landing() {
   return (

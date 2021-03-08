@@ -1,0 +1,92 @@
+.programas {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  min-height: -webkit-max-content;
+  min-height: -moz-max-content;
+  min-height: max-content;
+  background-color: white;
+  padding-top: 50px;
+}
+
+.programas__container {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  min-height: -webkit-max-content !important;
+  min-height: -moz-max-content !important;
+  min-height: max-content !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-top: 50px;
+}
+
+.programas__title {
+  font-family: "Anton", sans-serif;
+  font-size: 3rem;
+}
+
+.programas__subtitle {
+  font-family: "Darker Grotesque", sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.programas__list {
+  width: 60%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  padding-left: 0;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (max-width: 1120px) {
+  .programas__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+}
+
+@media (max-width: 1000px) {
+  .programas__subtitle {
+    width: 50vw;
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .programas__subtitle {
+    width: 60vw;
+    font-size: 1.2rem;
+    padding-bottom: 20px;
+  }
+}
+/*# sourceMappingURL=Programas.css.map */

@@ -5,7 +5,6 @@ import Happy3 from "./../imgs/happy_3.jpg";
 import Happy4 from "./../imgs/happy_4.JPG";
 import Happy5 from "./../imgs/happy_5.jpg";
 import Happy6 from "./../imgs/happy_6.jpg";
-import "./../styles/HappyPeople.css";
 
 function HappyPeople() {
   return (

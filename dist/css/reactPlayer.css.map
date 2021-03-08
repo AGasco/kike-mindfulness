@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,sBAAsB,CAAC;EACnB,MAAM,EAAE,eAAe;CAC1B;;AAED,AAAA,wBAAwB,CAAC;EACrB,YAAY,EAAE,2BAA2B;CAC5C",
+    "sources": [
+        "../../src/styles/reactPlayer.scss"
+    ],
+    "names": [],
+    "file": "reactPlayer.css"
+}

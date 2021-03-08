@@ -4,7 +4,6 @@ import Thumbnail from "./../imgs/pensamientosNegativos.jpg";
 import * as data from "./../data.json";
 import { Link } from "react-router-dom";
 import Logo from "./../imgs/logo_black.png";
-import "./../styles/ProgramaPage.css";
 
 class ProgramaPage extends Component {
   state = {

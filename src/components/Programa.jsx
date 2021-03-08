@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./../styles/Programa.css";
 
 function Programa({ title, title2, picture, description, url }) {
   return (
