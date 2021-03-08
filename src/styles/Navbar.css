@@ -21,9 +21,9 @@
 
 /* Logo KikeMindfulness */
 .navbar__logo {
-  position: absolute;
+  /* position: absolute;
   left: 6vw;
-  top: 2vh;
+  top: 2vh; */
   width: 15vw;
   padding-left: 10px;
   color: inherit;
@@ -70,7 +70,6 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding-left: 10vw;
 }
 
 .navbar__right {
@@ -88,7 +87,6 @@
   font-size: 1.2rem;
   list-style-type: none;
   display: flex;
-  padding-left: 10vw;
 }
 
 .navbar__li {
