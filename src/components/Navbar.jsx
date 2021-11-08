@@ -1,26 +1,16 @@
-import React, { Component } from "react";
-import { Link as RouterLink } from "react-router-dom";
-import { Link as ScrollLink } from "react-scroll";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faWhatsapp } from "@fortawesome/free-brands-svg-icons/";
-import NavbarLogo from "./../imgs/logo_navbar.jpg";
+import React, { Component } from 'react';
+import { Link as RouterLink } from 'react-router-dom';
+import { Link as ScrollLink } from 'react-scroll';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons/';
+import NavbarLogo from './../imgs/logo_navbar.jpg';
 
 class Navbar extends Component {
   render() {
     return (
       <div className="navbar">
-        {/* {this.props.hidden ? (
-          <div>
-            <h1 className="navbar__icon hidden">
-              <RouterLink to="/">
-                <img className="navbar__logo hidden" src={Logo} alt="logo" />
-              </RouterLink>
-            </h1>
-          </div>
-        ) : ( */}
         <div>
           <h1 className="navbar__icon">
-            {/* <RouterLink to="/">KIKE MINDFULNESS </RouterLink> */}
             <RouterLink to="/">
               <img className="navbar__logo" src={NavbarLogo} alt="" />
             </RouterLink>

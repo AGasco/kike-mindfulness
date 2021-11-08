@@ -1,15 +1,23 @@
-import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faInstagram,
-  faFacebookSquare,
-} from "@fortawesome/free-brands-svg-icons/";
+  faYoutube,
+  faFacebookSquare
+} from '@fortawesome/free-brands-svg-icons/';
 
 function Landing() {
   return (
     <div className="landing" id="landing">
       <div className="landing__mainSide">
         <p>kikemindfulness@gmail.com - 620648806</p>
+        <a
+          href="https://www.youtube.com/channel/UC0a7E4KP0wkQzjn-dnp6dZQ?sub_confirmation=1"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <FontAwesomeIcon icon={faYoutube} />
+        </a>
         <a
           href="https://www.instagram.com/kikemindfulness/?hl=es"
           target="_blank"

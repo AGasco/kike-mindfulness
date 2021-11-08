@@ -1,12 +1,13 @@
-import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
+  faYoutube,
   faInstagram,
-  faFacebookSquare,
-} from "@fortawesome/free-brands-svg-icons/";
-import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons/";
-import { Link as ScrollLink } from "react-scroll";
-import logo from "./../imgs/logo.png";
+  faFacebookSquare
+} from '@fortawesome/free-brands-svg-icons/';
+import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons/';
+import { Link as ScrollLink } from 'react-scroll';
+import logo from './../imgs/logo.png';
 
 function Footer() {
   return (
@@ -28,6 +29,13 @@ function Footer() {
         </p>
 
         <div className="footer__socialMedia">
+          <a
+            href="https://www.youtube.com/channel/UC0a7E4KP0wkQzjn-dnp6dZQ?sub_confirmation=1"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FontAwesomeIcon icon={faYoutube} />
+          </a>
           <a
             href="https://www.instagram.com/kikemindfulness/?hl=es"
             target="_blank"

@@ -39,7 +39,7 @@
     align-items: center;
 
     & > p {
-      font-family: "Darker Grotesque", sans-serif;
+      font-family: 'Darker Grotesque', sans-serif;
       font-size: 1.2rem;
       padding-top: 10px;
       padding-bottom: 10px;
@@ -48,7 +48,7 @@
   }
 
   &__quote {
-    font-family: "Darker Grotesque", sans-serif;
+    font-family: 'Darker Grotesque', sans-serif;
     padding: 20px;
     font-size: 1.2rem;
     text-align: center;
@@ -80,7 +80,7 @@
       & > li {
         margin: 0 10px;
         cursor: pointer;
-        font-family: "Asap", sans-serif;
+        font-family: 'Asap', sans-serif;
 
         & > a {
           text-decoration: none;
@@ -112,7 +112,7 @@
     right: 1vw;
     color: white;
     opacity: 0.3;
-    font-family: "Darker Grotesque", sans-serif;
+    font-family: 'Darker Grotesque', sans-serif;
     font-style: italic;
 
     & > a {
@@ -122,7 +122,7 @@
     }
 
     & span {
-      font-family: "Dancing Script", cursive;
+      font-family: 'Dancing Script', cursive;
       font-size: 1.5rem;
     }
   }
