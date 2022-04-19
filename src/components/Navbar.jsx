@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link as RouterLink } from 'react-router-dom';
 import { Link as ScrollLink } from 'react-scroll';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faWhatsapp } from '@fortawesome/free-brands-svg-icons/';
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import NavbarLogo from './../imgs/logo_navbar.jpg';
 
 class Navbar extends Component {

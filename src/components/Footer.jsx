@@ -4,8 +4,8 @@ import {
   faYoutube,
   faInstagram,
   faFacebookSquare
-} from '@fortawesome/free-brands-svg-icons/';
-import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons/';
+} from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { Link as ScrollLink } from 'react-scroll';
 import logo from './../imgs/logo.png';
 

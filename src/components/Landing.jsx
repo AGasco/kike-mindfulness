@@ -4,7 +4,7 @@ import {
   faInstagram,
   faYoutube,
   faFacebookSquare
-} from '@fortawesome/free-brands-svg-icons/';
+} from '@fortawesome/free-brands-svg-icons';
 
 function Landing() {
   return (

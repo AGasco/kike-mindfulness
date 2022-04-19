@@ -1,18 +1,18 @@
-import React, { Component } from "react";
-import emailjs from "emailjs-com";
-import ReactPlayer from "react-player/youtube";
-import { Link } from "react-router-dom";
+import React, { Component } from 'react';
+import emailjs from 'emailjs-com';
+import ReactPlayer from 'react-player/youtube';
+import { Link } from 'react-router-dom';
 
 class Contacto extends Component {
   state = {
     userData: {
-      name: "",
-      email: "",
-      phone: "",
-      program: "",
-      comments: "",
+      name: '',
+      email: '',
+      phone: '',
+      program: '',
+      comments: ''
     },
-    submitted: false,
+    submitted: false
   };
 
   componentDidMount() {
@@ -20,7 +20,7 @@ class Contacto extends Component {
       const userData = { ...this.state.userData };
       userData.program = this.props.match.params.id;
       this.setState({
-        userData,
+        userData
       });
     }
   }
@@ -41,16 +41,16 @@ class Contacto extends Component {
     const { name, email, phone, program, comments } = this.state.userData;
 
     emailjs.send(
-      "service_w0jpx6d",
-      "template_l4haweq",
+      'service_w0jpx6d',
+      'template_l4haweq',
       {
         from_name: name,
         from_email: email,
         from_phone: phone,
         programa: program,
-        message: comments,
+        message: comments
       },
-      "user_vqapMN2t3KdfleZZ8879Z"
+      'user_vqapMN2t3KdfleZZ8879Z'
     );
 
     this.setState({ submitted: true });
@@ -69,10 +69,11 @@ class Contacto extends Component {
                 Ponte en contacto conmigo y te responderé lo antes posible :)
               </p>
               <p className="contacto__subtitle">
-                O si lo prefieres, llámame directamente al 620 648 806
+                Llámame directamente al 620 648 806 (también respondo por
+                WhatsApp)
               </p>
             </em>
-            <form onSubmit={this.handleSubmit}>
+            {/* <form onSubmit={this.handleSubmit}>
               <div className="contacto__formElem">
                 <label htmlFor="name">¿Cómo te llamas?</label>
                 <input
@@ -145,7 +146,7 @@ class Contacto extends Component {
                   value="¡Empieza tu aventura de autoconocimiento!"
                 />
               </div>
-            </form>
+            </form> */}
           </div>
         ) : (
           <div className="contacto__container">

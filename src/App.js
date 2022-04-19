@@ -1,17 +1,17 @@
-import Navbar from "./components/Navbar";
-import Landing from "./components/Landing";
-import QuienSoy from "./components/QuienSoy";
-import LeadGenerator from "./components/LeadGenerator";
-import Programas from "./components/Programas";
-import ProgramaPage from "./components/ProgramaPage";
-import Contacto from "./components/Contacto";
-import Footer from "./components/Footer";
-import { Route, Switch } from "react-router-dom";
-import React, { Component } from "react";
-import * as data from "./data.json";
-import "./styles/App.scss";
-import HappyPeople from "./components/HappyPeople";
-import Testimonios from "./components/Testimonios";
+import Navbar from './components/Navbar';
+import Landing from './components/Landing';
+import QuienSoy from './components/QuienSoy';
+import LeadGenerator from './components/LeadGenerator';
+import Programas from './components/Programas';
+import ProgramaPage from './components/ProgramaPage';
+import Contacto from './components/Contacto';
+import Footer from './components/Footer';
+import { Route, Switch } from 'react-router-dom';
+import React, { Component } from 'react';
+import * as data from './data.json';
+import './styles/App.scss';
+import HappyPeople from './components/HappyPeople';
+import Testimonios from './components/Testimonios';
 
 class App extends Component {
   render() {
