@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import emailjs from 'emailjs-com';
 import ReactPlayer from 'react-player/youtube';
-import { Link } from 'react-router-dom';
 
 class Contacto extends Component {
   state = {
@@ -25,10 +24,6 @@ class Contacto extends Component {
     }
   }
 
-  componentDidUpdate() {
-    console.log(this.state);
-  }
-
   handleInputChange = (e) => {
     const userData = { ...this.state.userData };
     userData[e.target.name] = e.target.value;
@@ -40,18 +35,27 @@ class Contacto extends Component {
 
     const { name, email, phone, program, comments } = this.state.userData;
 
-    emailjs.send(
-      'service_w0jpx6d',
-      'template_l4haweq',
-      {
-        from_name: name,
-        from_email: email,
-        from_phone: phone,
-        programa: program,
-        message: comments
-      },
-      'user_vqapMN2t3KdfleZZ8879Z'
-    );
+    emailjs
+      .send(
+        process.env.REACT_APP_EMAILJS_SERVICE_ID,
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+        {
+          from_name: name,
+          from_email: email,
+          from_phone: phone,
+          programa: program,
+          message: comments
+        },
+        process.env.REACT_APP_EMAILJS_USER_ID
+      )
+      .then(
+        function (response) {
+          console.log('SUCCESS!', response.status, response.text);
+        },
+        function (error) {
+          console.log('FAILED...', error);
+        }
+      );
 
     this.setState({ submitted: true });
   };
@@ -73,7 +77,7 @@ class Contacto extends Component {
                 WhatsApp)
               </p>
             </em>
-            {/* <form onSubmit={this.handleSubmit}>
+            <form onSubmit={this.handleSubmit}>
               <div className="contacto__formElem">
                 <label htmlFor="name">¿Cómo te llamas?</label>
                 <input
@@ -146,7 +150,7 @@ class Contacto extends Component {
                   value="¡Empieza tu aventura de autoconocimiento!"
                 />
               </div>
-            </form> */}
+            </form>
           </div>
         ) : (
           <div className="contacto__container">
